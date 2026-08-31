@@ -1,0 +1,1096 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+   ========================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f5f2;
+    color: #3e4548;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   PAGE
+   ========================================= */
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+    width: 100%;
+    height: 76px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e3df;
+
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* BRAND */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.logo {
+    width: 43px;
+    height: 43px;
+
+    border-radius: 11px;
+
+    background: #f0e8dc;
+
+    color: #a67d4d;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 21px;
+    font-weight: bold;
+}
+
+
+.mini-title {
+    display: block;
+
+    font-size: 7px;
+
+    letter-spacing: 1.5px;
+
+    color: #a17e53;
+
+    font-weight: bold;
+
+    margin-bottom: 4px;
+}
+
+
+.brand h1 {
+    font-size: 18px;
+
+    color: #394247;
+}
+
+
+/* HEADER STATUS */
+
+.header-status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 8px 13px;
+
+    border-radius: 20px;
+
+    background: #f0f6f1;
+
+    border: 1px solid #dce8df;
+
+    color: #64886f;
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    letter-spacing: .8px;
+}
+
+
+.status-dot {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #62a276;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+   ========================================= */
+
+.container {
+    width: 86%;
+    max-width: 1080px;
+
+    margin: 25px auto 35px;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+    min-height: 205px;
+
+    padding: 30px 33px;
+
+    border-radius: 18px;
+
+    background: #f1ebe3;
+
+    border: 1px solid #e7ddd0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+.hero-label {
+    display: block;
+
+    font-size: 7px;
+
+    letter-spacing: 1.6px;
+
+    color: #a17d51;
+
+    font-weight: bold;
+
+    margin-bottom: 9px;
+}
+
+
+.hero h2 {
+    font-size: 29px;
+
+    line-height: 1.18;
+
+    font-weight: 400;
+
+    color: #3f484c;
+
+    margin-bottom: 10px;
+}
+
+
+.hero h2 strong {
+    color: #9c764c;
+
+    font-weight: 700;
+}
+
+
+.hero p {
+    max-width: 570px;
+
+    font-size: 9px;
+
+    line-height: 1.7;
+
+    color: #85847f;
+}
+
+
+/* =========================================
+   HERO GRAPHIC
+   ========================================= */
+
+.hero-graphic {
+    width: 210px;
+    height: 160px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.graphic-circle {
+    width: 112px;
+    height: 112px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    border: 1px solid #e2d8cb;
+
+    box-shadow:
+        0 12px 28px rgba(100, 80, 55, .08);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.graphic-circle span {
+    font-size: 37px;
+
+    font-weight: bold;
+
+    color: #a27b4d;
+}
+
+
+.graphic-small {
+    width: 36px;
+    height: 36px;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3dbd1;
+
+    color: #68a077;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    position: absolute;
+
+    right: 19px;
+
+    top: 22px;
+
+    box-shadow:
+        0 6px 15px rgba(70, 60, 50, .07);
+
+    z-index: 3;
+}
+
+
+.graphic-small.second {
+    right: 0;
+
+    top: 102px;
+
+    color: #5d88a3;
+
+}
+
+
+/* =========================================
+   PAYROLL CARD
+   ========================================= */
+
+.payroll-card {
+    margin-top: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e1de;
+
+    border-radius: 16px;
+
+    padding: 23px;
+}
+
+
+/* =========================================
+   CARD HEADER
+   ========================================= */
+
+.card-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 21px;
+}
+
+
+.card-header > div:first-child span {
+    display: block;
+
+    font-size: 7px;
+
+    letter-spacing: 1.4px;
+
+    color: #a17c50;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+.card-header h2 {
+    font-size: 18px;
+
+    color: #3f484d;
+}
+
+
+.step-number {
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+
+    background: #f3ede5;
+
+    color: #a47d50;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 8px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   SECTION HEADING
+   ========================================= */
+
+.section-heading {
+    padding-bottom: 9px;
+
+    border-bottom: 1px solid #eceae7;
+
+    margin-bottom: 14px;
+}
+
+
+.section-heading span {
+    font-size: 7px;
+
+    letter-spacing: 1px;
+
+    color: #8c9694;
+
+    font-weight: bold;
+}
+
+
+.salary-heading {
+    margin-top: 21px;
+}
+
+
+/* =========================================
+   FORM GRID
+   ========================================= */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+
+/* =========================================
+   FIELD
+   ========================================= */
+
+.field {
+    margin-bottom: 2px;
+}
+
+
+.field label {
+    display: block;
+
+    font-size: 7px;
+
+    color: #747e83;
+
+    font-weight: bold;
+
+    margin-bottom: 6px;
+}
+
+
+.field input {
+    width: 100%;
+
+    height: 39px;
+
+    border: 1px solid #dededb;
+
+    border-radius: 8px;
+
+    background: #fcfcfb;
+
+    padding: 0 12px;
+
+    outline: none;
+
+    color: #4b555a;
+
+    font-size: 9px;
+
+    transition: .2s ease;
+}
+
+
+.field input::placeholder {
+    color: #b1b4b3;
+}
+
+
+.field input:focus {
+    border-color: #b59a78;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px #f5eee6;
+}
+
+
+/* =========================================
+   SALARY GRID
+   ========================================= */
+
+.salary-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+}
+
+
+.salary-box {
+    min-height: 120px;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    position: relative;
+
+    border: 1px solid;
+}
+
+
+.blue-box {
+    background: #edf3f7;
+
+    border-color: #dce7ed;
+}
+
+
+.green-box {
+    background: #edf5ef;
+
+    border-color: #dceade;
+}
+
+
+.orange-box {
+    background: #fbf0e6;
+
+    border-color: #eedfce;
+}
+
+
+.salary-icon {
+    width: 31px;
+    height: 31px;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.blue-box .salary-icon {
+    background: #ffffff;
+
+    color: #6286a0;
+}
+
+
+.green-box .salary-icon {
+    background: #ffffff;
+
+    color: #65956f;
+}
+
+
+.orange-box .salary-icon {
+    background: #ffffff;
+
+    color: #b7824e;
+}
+
+
+.salary-box label {
+    display: block;
+
+    font-size: 7px;
+
+    letter-spacing: .7px;
+
+    color: #727d80;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+.salary-box input {
+    width: 100%;
+
+    height: 31px;
+
+    border: none;
+
+    border-bottom: 1px solid #d7d8d5;
+
+    background: transparent;
+
+    outline: none;
+
+    color: #4a5559;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    padding: 0 2px;
+}
+
+
+.salary-box input:focus {
+    border-bottom-color: #9b825f;
+}
+
+
+/* =========================================
+   EXCEPTION INFO
+   ========================================= */
+
+.exception-info {
+    margin-top: 18px;
+
+    padding: 13px 15px;
+
+    border-radius: 10px;
+
+    background: #f5f3ed;
+
+    border: 1px solid #e8e3d8;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.exception-symbol {
+    width: 33px;
+    height: 33px;
+
+    flex-shrink: 0;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #b18757;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.exception-info strong {
+    display: block;
+
+    font-size: 8px;
+
+    color: #635c52;
+
+    margin-bottom: 4px;
+}
+
+
+.exception-info p {
+    font-size: 7px;
+
+    line-height: 1.5;
+
+    color: #969188;
+}
+
+
+/* =========================================
+   SUBMIT AREA
+   ========================================= */
+
+.submit-area {
+    margin-top: 18px;
+
+    padding-top: 16px;
+
+    border-top: 1px solid #e9e7e4;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.validation {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    font-size: 7px;
+
+    color: #858d8c;
+}
+
+
+.validation span {
+    width: 22px;
+    height: 22px;
+
+    border-radius: 50%;
+
+    background: #eaf4ed;
+
+    color: #60966e;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 9px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   BUTTON
+   ========================================= */
+
+.submit-area button {
+    border: none;
+
+    outline: none;
+
+    cursor: pointer;
+
+    background: #596b64;
+
+    color: #ffffff;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+    transition: .2s ease;
+}
+
+
+.submit-area button:hover {
+    background: #465750;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px rgba(65, 82, 74, .15);
+}
+
+
+.submit-area button span {
+    font-size: 13px;
+
+    margin-left: 8px;
+}
+
+
+/* =========================================
+   FEATURES SECTION
+   ========================================= */
+
+.features {
+    margin-top: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e1de;
+
+    border-radius: 15px;
+
+    padding: 20px;
+}
+
+
+.feature-heading {
+    margin-bottom: 15px;
+}
+
+
+.feature-heading span {
+    display: block;
+
+    font-size: 7px;
+
+    letter-spacing: 1.4px;
+
+    color: #9d7a52;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+.feature-heading h2 {
+    font-size: 17px;
+
+    color: #414a4e;
+}
+
+
+/* =========================================
+   FEATURE GRID
+   ========================================= */
+
+.feature-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 10px;
+}
+
+
+.feature-card {
+    min-height: 82px;
+
+    padding: 13px;
+
+    background: #fafaf9;
+
+    border: 1px solid #e5e4e1;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.feature-icon {
+    width: 35px;
+    height: 35px;
+
+    flex-shrink: 0;
+
+    border-radius: 9px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.feature-icon.blue {
+    background: #e9f0f5;
+
+    color: #6589a2;
+}
+
+
+.feature-icon.orange {
+    background: #f9eee4;
+
+    color: #b58251;
+}
+
+
+.feature-icon.green {
+    background: #e9f4eb;
+
+    color: #629571;
+}
+
+
+.feature-card h3 {
+    font-size: 8px;
+
+    color: #566065;
+
+    margin-bottom: 4px;
+}
+
+
+.feature-card p {
+    font-size: 7px;
+
+    color: #9a9f9e;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    margin-top: 20px;
+
+    padding-top: 17px;
+
+    border-top: 1px solid #dfdfdc;
+
+    text-align: center;
+
+    font-size: 6px;
+
+    letter-spacing: 1px;
+
+    color: #9da2a1;
+}
+
+
+footer span {
+    margin: 0 6px;
+
+    color: #c4c5c3;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 850px) {
+
+    .container {
+        width: 90%;
+    }
+
+
+    .hero-graphic {
+        width: 170px;
+    }
+
+
+    .salary-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .feature-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 650px) {
+
+    .header {
+        padding: 0 5%;
+    }
+
+
+    .header-status {
+        display: none;
+    }
+
+
+    .container {
+        width: 92%;
+    }
+
+
+    .hero {
+        padding: 23px;
+    }
+
+
+    .hero-graphic {
+        display: none;
+    }
+
+
+    .hero h2 {
+        font-size: 23px;
+    }
+
+
+    .payroll-card,
+    .features {
+        padding: 16px;
+    }
+
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+
+    .salary-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .submit-area {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 13px;
+    }
+
+
+    .submit-area button {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 430px) {
+
+    .brand h1 {
+        font-size: 15px;
+    }
+
+
+    .logo {
+        width: 38px;
+        height: 38px;
+    }
+
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+
+    .card-header {
+        align-items: flex-start;
+    }
+
+
+    .step-number {
+        width: 31px;
+        height: 31px;
+    }
+
+}
