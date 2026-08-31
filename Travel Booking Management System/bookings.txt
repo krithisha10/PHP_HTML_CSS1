@@ -1,0 +1,25 @@
+Booking ID: TRP20260831094520
+Customer Name: Krithisha
+Email: krithisha@gmail.com
+Phone: 9876543210
+Destination: Ooty
+Location: Tamil Nadu
+Travel Date: 12 Sep 2026
+Travel Day: Saturday
+Travel Time: 06:30 AM
+Duration: 2 Days
+Price: ₹3,500
+Booked At: 31 Aug 2026, 09:45:20 AM
+----------------------------------------Booking ID: TRP20260831111048
+Customer Name: Ramesh Kumar
+Email: ramesh@gmail.com
+Phone: 9087654321
+Destination: Ooty
+Location: Tamil Nadu
+Travel Date: 12 Sep 2026
+Travel Day: Saturday
+Travel Time: 06:30 AM
+Duration: 2 Days
+Price: ₹3,500
+Booked At: 31 Aug 2026, 11:10:48 AM
+----------------------------------------

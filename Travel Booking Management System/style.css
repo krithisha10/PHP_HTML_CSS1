@@ -1,0 +1,927 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background: #f5f8f7;
+
+    color: #303b3a;
+}
+
+.page {
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    height: 74px;
+
+    padding: 0 7%;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e4ece9;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.logo-area {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 11px;
+
+    background: #f0b84f;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 16px;
+
+    transform: rotate(-5deg);
+}
+
+.logo-area h2 {
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    color: #33403e;
+}
+
+.logo-area span {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #a2aca9;
+
+    font-size: 5.5px;
+
+    letter-spacing: 1.4px;
+}
+
+.nav-info {
+    text-align: right;
+}
+
+.nav-info span {
+    display: block;
+
+    color: #a8b0ae;
+
+    font-size: 5.5px;
+
+    letter-spacing: 1px;
+}
+
+.nav-info strong {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #65706e;
+
+    font-size: 8px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 260px;
+
+    padding: 40px 8%;
+
+    background: #dcefed;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.hero-text {
+    max-width: 580px;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+.hero-tag {
+    display: inline-block;
+
+    padding: 8px 12px;
+
+    background: #f9ffff;
+
+    color: #3b9690;
+
+    border-radius: 20px;
+
+    font-size: 5.5px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+}
+
+.hero h1 {
+    margin-top: 17px;
+
+    font-family: Georgia, serif;
+
+    font-size: 44px;
+
+    line-height: 1.05;
+
+    font-weight: 500;
+
+    color: #34413f;
+}
+
+.hero h1 span {
+    color: #35958e;
+}
+
+.hero p {
+    max-width: 470px;
+
+    margin-top: 13px;
+
+    color: #71817e;
+
+    font-size: 8px;
+
+    line-height: 1.8;
+}
+
+.hero-points {
+    display: flex;
+
+    gap: 16px;
+
+    margin-top: 16px;
+}
+
+.hero-points span {
+    color: #64817c;
+
+    font-size: 6px;
+}
+
+
+/* =========================
+   HERO VISUAL
+========================= */
+
+.hero-visual {
+    width: 300px;
+    height: 210px;
+
+    position: relative;
+}
+
+.sun {
+    position: absolute;
+
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+
+    background: #f2bd57;
+
+    top: 10px;
+    right: 45px;
+}
+
+.mountain {
+    position: absolute;
+
+    bottom: 5px;
+
+    width: 0;
+    height: 0;
+
+    border-left: 110px solid transparent;
+
+    border-right: 110px solid transparent;
+
+    border-bottom: 130px solid #8fc2b7;
+}
+
+.mountain-one {
+    right: 80px;
+}
+
+.mountain-two {
+    right: -15px;
+
+    transform: scale(0.75);
+
+    border-bottom-color: #76afa5;
+}
+
+.plane {
+    position: absolute;
+
+    top: 55px;
+    left: 55px;
+
+    font-size: 29px;
+
+    color: #348f88;
+
+    transform: rotate(-12deg);
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    width: 86%;
+
+    max-width: 1180px;
+
+    margin: 35px auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 300px;
+
+    gap: 24px;
+
+    flex: 1;
+}
+
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.section-heading {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+.section-heading span {
+    color: #3c948d;
+
+    font-size: 5.5px;
+
+    letter-spacing: 1.3px;
+
+    font-weight: 800;
+}
+
+.section-heading h2 {
+    margin-top: 5px;
+
+    color: #3d4846;
+
+    font-family: Georgia, serif;
+
+    font-size: 21px;
+
+    font-weight: 500;
+}
+
+.trip-count {
+    padding: 7px 10px;
+
+    background: #e3f1ef;
+
+    color: #579b95;
+
+    border-radius: 20px;
+
+    font-size: 5.5px;
+
+    letter-spacing: 1px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   DESTINATION LIST
+========================= */
+
+.destination-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.destination-card {
+    min-height: 102px;
+
+    padding: 13px;
+
+    background: white;
+
+    border: 1px solid #e3ebe8;
+
+    border-radius: 13px;
+
+    display: grid;
+
+    grid-template-columns: 52px 1fr 75px 80px 90px;
+
+    align-items: center;
+
+    gap: 13px;
+
+    transition: 0.25s;
+}
+
+.destination-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(40,90,85,0.07);
+}
+
+
+/* DESTINATION ICON */
+
+.destination-icon {
+    width: 51px;
+    height: 65px;
+
+    border-radius: 11px;
+
+    background: #e8f3f1;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 21px;
+}
+
+
+/* DETAILS */
+
+.trip-number {
+    color: #a6b0ad;
+
+    font-size: 5px;
+
+    letter-spacing: 1px;
+}
+
+.destination-details h3 {
+    margin-top: 4px;
+
+    color: #414c4a;
+
+    font-size: 10px;
+}
+
+.destination-details small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #9ba6a3;
+
+    font-size: 5.8px;
+}
+
+.trip-meta {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 7px;
+
+    color: #8d9a97;
+
+    font-size: 5.5px;
+}
+
+
+/* DURATION */
+
+.trip-duration {
+    text-align: center;
+
+    border-left: 1px solid #edf1ef;
+
+    padding-left: 8px;
+}
+
+.trip-duration strong {
+    display: block;
+
+    color: #5e7772;
+
+    font-size: 7px;
+}
+
+.trip-duration span {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #abb3b1;
+
+    font-size: 5px;
+
+    letter-spacing: .7px;
+}
+
+
+/* PRICE */
+
+.trip-price {
+    text-align: center;
+}
+
+.trip-price span {
+    display: block;
+
+    color: #abb3b1;
+
+    font-size: 5px;
+
+    letter-spacing: .8px;
+}
+
+.trip-price strong {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #4e6864;
+
+    font-size: 9px;
+}
+
+
+/* BUTTON */
+
+.destination-card button {
+    width: 90px;
+    height: 34px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #3d9a92;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 5.8px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+.destination-card button:hover {
+    background: #2e837c;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   BOOKING PANEL
+========================= */
+
+.booking-panel {
+    background: white;
+
+    border: 1px solid #e3ebe8;
+
+    border-radius: 16px;
+
+    padding: 24px;
+
+    align-self: start;
+
+    box-shadow:
+        0 10px 30px rgba(40,80,75,0.035);
+}
+
+.panel-top {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.panel-icon {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 9px;
+
+    background: #fff3d9;
+
+    color: #d89c2e;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 12px;
+}
+
+.panel-top > span {
+    color: #3d9991;
+
+    font-size: 5.5px;
+
+    letter-spacing: 1.2px;
+
+    font-weight: 800;
+}
+
+.booking-panel h2 {
+    margin-top: 13px;
+
+    font-family: Georgia, serif;
+
+    color: #414b49;
+
+    font-size: 19px;
+
+    font-weight: 500;
+}
+
+.booking-panel > p {
+    margin-top: 7px;
+
+    color: #99a29f;
+
+    font-size: 6.5px;
+
+    line-height: 1.7;
+}
+
+
+/* BOOKING COUNT */
+
+.booking-count {
+    margin-top: 18px;
+
+    padding: 16px;
+
+    background: #eaf4f2;
+
+    border-radius: 11px;
+
+    text-align: center;
+}
+
+.booking-count strong {
+    display: block;
+
+    color: #3c968e;
+
+    font-family: Georgia, serif;
+
+    font-size: 29px;
+
+    font-weight: 500;
+}
+
+.booking-count span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #8fa5a1;
+
+    font-size: 5px;
+
+    letter-spacing: 1px;
+}
+
+
+/* RECENT */
+
+.registered-title {
+    margin-top: 20px;
+
+    color: #999f9d;
+
+    font-size: 5px;
+
+    letter-spacing: 1px;
+
+    font-weight: 800;
+}
+
+.booking-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid #edf1ef;
+}
+
+.check {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background: #e6f2eb;
+
+    color: #6b9b7b;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 7px;
+}
+
+.booking-item strong {
+    display: block;
+
+    color: #65716e;
+
+    font-size: 6.5px;
+}
+
+.booking-item small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #a4adaa;
+
+    font-size: 5.5px;
+}
+
+
+/* EMPTY */
+
+.empty-booking {
+    margin-top: 16px;
+
+    padding: 17px 10px;
+
+    background: #f7faf9;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.empty-booking div {
+    color: #ddb45f;
+
+    font-size: 17px;
+}
+
+.empty-booking p {
+    margin-top: 7px;
+
+    color: #7c8885;
+
+    font-size: 7px;
+}
+
+.empty-booking small {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #a7afad;
+
+    font-size: 5.5px;
+
+    line-height: 1.5;
+}
+
+
+/* SESSION */
+
+.session-box {
+    margin-top: 18px;
+
+    padding: 11px;
+
+    background: #f1f5f3;
+
+    border-radius: 9px;
+}
+
+.session-box strong {
+    display: block;
+
+    color: #668e7a;
+
+    font-size: 5.5px;
+
+    letter-spacing: .8px;
+}
+
+.session-box small {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #9ba49f;
+
+    font-size: 5.5px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    min-height: 50px;
+
+    padding: 0 7%;
+
+    border-top: 1px solid #e3ebe8;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    color: #a4adaa;
+
+    font-size: 5px;
+
+    letter-spacing: .8px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1050px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-panel {
+        width: 100%;
+    }
+
+    .destination-card {
+        grid-template-columns:
+            52px 1fr 75px 90px;
+    }
+
+    .trip-price {
+        display: none;
+    }
+}
+
+
+@media (max-width: 750px) {
+
+    .hero {
+        padding: 35px 6%;
+    }
+
+    .hero-visual {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 37px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .destination-card {
+        grid-template-columns: 52px 1fr 90px;
+    }
+
+    .trip-duration {
+        display: none;
+    }
+}
+
+
+@media (max-width: 520px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    .nav-info {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-points {
+        flex-direction: column;
+
+        gap: 6px;
+    }
+
+    .destination-card {
+        grid-template-columns: 52px 1fr;
+
+        padding: 12px;
+    }
+
+    .destination-card form {
+        grid-column: 2;
+    }
+
+    .destination-card button {
+        width: 100%;
+    }
+
+    footer {
+        padding: 12px 5%;
+
+        display: block;
+    }
+
+    footer span {
+        display: block;
+
+        margin-bottom: 5px;
+    }
+}
