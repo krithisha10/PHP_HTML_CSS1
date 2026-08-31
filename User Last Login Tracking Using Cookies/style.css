@@ -1,0 +1,974 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f4f8ff,
+            #fff7f1
+        );
+
+    color: #27334a;
+}
+
+
+/* ================================
+   PAGE
+================================ */
+
+.page {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ================================
+   TOPBAR
+================================ */
+
+.topbar {
+    height: 78px;
+
+    padding: 0 7%;
+
+    background: rgba(255,255,255,0.88);
+
+    border-bottom: 1px solid #e5eaf2;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.brand-icon {
+    width: 43px;
+    height: 43px;
+
+    border-radius: 13px;
+
+    background: #4e79d9;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+.brand h2 {
+    font-size: 17px;
+}
+
+.brand span {
+    display: block;
+
+    font-size: 8px;
+
+    color: #9ba4b5;
+
+    letter-spacing: 2px;
+
+    margin-top: 3px;
+}
+
+.security-status {
+    font-size: 10px;
+
+    color: #788497;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+.pulse {
+    width: 7px;
+    height: 7px;
+
+    background: #55b889;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 4px #e1f4eb;
+}
+
+
+/* ================================
+   MAIN
+================================ */
+
+.main-container {
+    width: 88%;
+
+    max-width: 1120px;
+
+    margin: auto;
+
+    padding: 70px 0;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 430px;
+
+    gap: 90px;
+
+    align-items: center;
+}
+
+
+/* ================================
+   INTRO
+================================ */
+
+.intro {
+    padding-bottom: 20px;
+}
+
+.eyebrow {
+    display: inline-block;
+
+    background: #e9efff;
+
+    color: #5275c6;
+
+    padding: 8px 13px;
+
+    border-radius: 20px;
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+
+    font-weight: bold;
+
+    margin-bottom: 22px;
+}
+
+.intro h1 {
+    font-size: 62px;
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 23px;
+}
+
+.intro h1 span {
+    color: #e4875e;
+}
+
+.intro > p {
+    color: #7e899a;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    max-width: 500px;
+}
+
+
+/* ================================
+   TIMELINE
+================================ */
+
+.timeline {
+    margin-top: 42px;
+}
+
+.timeline-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+}
+
+.timeline-icon {
+    width: 37px;
+    height: 37px;
+
+    border-radius: 11px;
+
+    background: #e9edf4;
+
+    color: #8792a4;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 9px;
+
+    font-weight: bold;
+}
+
+.timeline-item.active .timeline-icon {
+    background: #4e79d9;
+
+    color: white;
+}
+
+.timeline-item strong {
+    display: block;
+
+    font-size: 12px;
+}
+
+.timeline-item small {
+    display: block;
+
+    color: #9ca5b4;
+
+    font-size: 9px;
+
+    margin-top: 3px;
+}
+
+.timeline-line {
+    height: 20px;
+
+    width: 1px;
+
+    background: #dfe4ec;
+
+    margin-left: 18px;
+}
+
+
+/* ================================
+   INFO BOX
+================================ */
+
+.info-box {
+    margin-top: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    background: white;
+
+    border: 1px solid #e3e8f0;
+
+    border-radius: 14px;
+
+    padding: 15px 18px;
+
+    width: fit-content;
+}
+
+.info-icon {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 10px;
+
+    background: #fff0e8;
+
+    color: #df8059;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 17px;
+}
+
+.info-box strong {
+    display: block;
+
+    font-size: 10px;
+}
+
+.info-box p {
+    color: #969fad;
+
+    font-size: 9px;
+
+    margin-top: 4px;
+
+    max-width: 350px;
+}
+
+
+/* ================================
+   LOGIN CARD
+================================ */
+
+.login-card {
+    background: white;
+
+    border: 1px solid #e1e6ef;
+
+    border-radius: 23px;
+
+    padding: 34px;
+
+    box-shadow:
+        0 25px 65px
+        rgba(55, 74, 110, 0.10);
+
+    animation: appear 0.6s ease;
+}
+
+.card-top {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #edf0f5;
+
+    margin-bottom: 25px;
+}
+
+.lock {
+    width: 45px;
+    height: 45px;
+
+    background: #eef3ff;
+
+    border-radius: 13px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 19px;
+}
+
+.card-top p {
+    color: #9ca5b4;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 4px;
+}
+
+.card-top h2 {
+    font-size: 21px;
+}
+
+
+/* ================================
+   FORM
+================================ */
+
+.field {
+    margin-bottom: 19px;
+}
+
+.field label {
+    display: block;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+.field input {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #e0e5ed;
+
+    border-radius: 10px;
+
+    background: #fbfcfe;
+
+    outline: none;
+
+    font-size: 11px;
+
+    color: #344056;
+
+    transition: 0.3s;
+}
+
+.field input:focus {
+    border-color: #6f8edb;
+
+    box-shadow:
+        0 0 0 4px
+        rgba(78,121,217,0.08);
+}
+
+
+/* ================================
+   REMEMBER
+================================ */
+
+.remember-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin: 8px 0 22px;
+}
+
+.checkbox {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    font-size: 9px;
+
+    color: #818c9e;
+}
+
+.checkbox input {
+    accent-color: #4e79d9;
+}
+
+.protected {
+    color: #55a77f;
+
+    background: #e7f6ee;
+
+    padding: 5px 8px;
+
+    border-radius: 20px;
+
+    font-size: 8px;
+}
+
+
+/* ================================
+   BUTTON
+================================ */
+
+.login-card button {
+    width: 100%;
+
+    border: none;
+
+    padding: 15px;
+
+    background: #4e79d9;
+
+    color: white;
+
+    border-radius: 10px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.login-card button span {
+    margin-left: 8px;
+}
+
+.login-card button:hover {
+    background: #3e65bf;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(78,121,217,0.22);
+}
+
+.card-footer {
+    text-align: center;
+
+    color: #a0a8b5;
+
+    font-size: 8px;
+
+    margin-top: 17px;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    border-top: 1px solid #e2e7ee;
+
+    padding: 19px;
+
+    text-align: center;
+
+    font-size: 9px;
+
+    color: #a0a8b4;
+}
+
+footer span {
+    color: #4e79d9;
+
+    font-weight: bold;
+}
+
+
+/* ================================
+   RESULT PAGE
+================================ */
+
+.result-page {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+.result-card {
+    width: 650px;
+
+    background: white;
+
+    border: 1px solid #e1e6ee;
+
+    border-radius: 25px;
+
+    padding: 45px;
+
+    text-align: center;
+
+    box-shadow:
+        0 25px 70px
+        rgba(55,74,110,0.10);
+
+    animation: appear 0.6s ease;
+}
+
+.success-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background: #e3f5eb;
+
+    color: #48a477;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+
+    font-weight: bold;
+}
+
+.result-label {
+    color: #4ca478;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+
+    margin-top: 22px;
+}
+
+.result-card h1 {
+    font-size: 34px;
+
+    margin: 9px 0 13px;
+}
+
+.result-card h1 span {
+    color: #4e79d9;
+}
+
+.result-description {
+    color: #8993a2;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    max-width: 460px;
+
+    margin: auto;
+}
+
+
+/* ================================
+   LAST LOGIN
+================================ */
+
+.last-login-card {
+    margin-top: 28px;
+
+    background: #eef3ff;
+
+    border: 1px solid #dce5fb;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    text-align: left;
+
+    gap: 14px;
+}
+
+.clock-icon {
+    width: 45px;
+    height: 45px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    color: #4e79d9;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+}
+
+.last-login-card span,
+.current-login span,
+.first-login span {
+    display: block;
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+    color: #8b96aa;
+
+    margin-bottom: 5px;
+}
+
+.last-login-card strong {
+    font-size: 15px;
+
+    color: #3e527b;
+}
+
+
+/* ================================
+   CURRENT LOGIN
+================================ */
+
+.current-login {
+    margin-top: 10px;
+
+    background: #f7f9fc;
+
+    border: 1px solid #e7ebf1;
+
+    border-radius: 13px;
+
+    padding: 16px 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    text-align: left;
+}
+
+.current-login strong {
+    font-size: 11px;
+}
+
+.online-badge {
+    color: #4b9d75;
+
+    background: #e3f4eb;
+
+    border-radius: 20px;
+
+    padding: 6px 9px;
+
+    font-size: 8px;
+
+    font-weight: bold;
+}
+
+
+/* ================================
+   FIRST LOGIN
+================================ */
+
+.first-login {
+    margin-top: 28px;
+
+    background: #fff2ea;
+
+    border: 1px solid #f5dfd2;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    display: flex;
+
+    text-align: left;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+.first-icon {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 12px;
+
+    background: white;
+
+    color: #df8059;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 19px;
+}
+
+.first-login strong {
+    display: block;
+
+    font-size: 13px;
+
+    color: #6d594f;
+}
+
+.first-login small {
+    display: block;
+
+    color: #a39188;
+
+    font-size: 9px;
+
+    margin-top: 5px;
+}
+
+
+/* ================================
+   TECHNICAL
+================================ */
+
+.technical {
+    margin-top: 20px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 8px;
+}
+
+.technical div {
+    background: #f8f9fb;
+
+    border: 1px solid #e9edf2;
+
+    border-radius: 10px;
+
+    padding: 12px;
+}
+
+.technical span {
+    display: block;
+
+    color: #9aa3b0;
+
+    font-size: 7px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 5px;
+}
+
+.technical strong {
+    font-size: 9px;
+}
+
+
+/* ================================
+   BACK BUTTON
+================================ */
+
+.back-button {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    color: #4e79d9;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================
+   ANIMATION
+================================ */
+
+@keyframes appear {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+    .main-container {
+        grid-template-columns: 1fr;
+
+        max-width: 620px;
+
+        gap: 45px;
+    }
+
+    .intro {
+        text-align: center;
+    }
+
+    .intro > p {
+        margin: auto;
+    }
+
+    .timeline {
+        width: fit-content;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: left;
+    }
+
+    .info-box {
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: left;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .topbar {
+        padding: 0 5%;
+    }
+
+    .security-status {
+        display: none;
+    }
+
+    .main-container {
+        width: 90%;
+
+        padding: 45px 0;
+    }
+
+    .intro h1 {
+        font-size: 48px;
+    }
+
+    .login-card,
+    .result-card {
+        padding: 28px 20px;
+    }
+
+    .technical {
+        grid-template-columns: 1fr;
+    }
+
+}
