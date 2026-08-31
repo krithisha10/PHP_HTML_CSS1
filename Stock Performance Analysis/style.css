@@ -1,0 +1,1136 @@
+/* ==========================================
+   RESET
+   ========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   BODY
+   ========================================== */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f5f6f2;
+
+    color: #39413f;
+
+    min-height: 100vh;
+
+}
+
+
+.page {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+}
+
+
+/* ==========================================
+   TOP BAR
+   ========================================== */
+
+.topbar {
+
+    height: 76px;
+
+    width: 100%;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e1e4df;
+
+    padding: 0 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+/* BRAND */
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.brand-mark {
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 10px;
+
+    background: #e4f0e8;
+
+    color: #4d8d69;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+}
+
+
+.brand-text span {
+
+    display: block;
+
+    font-size: 7px;
+
+    letter-spacing: 1.6px;
+
+    color: #679579;
+
+    font-weight: bold;
+
+    margin-bottom: 4px;
+
+}
+
+
+.brand-text h1 {
+
+    font-size: 18px;
+
+    color: #3e4644;
+
+    font-weight: 700;
+
+}
+
+
+/* MARKET INDICATOR */
+
+.market-indicator {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 8px 13px;
+
+    background: #f1f4f1;
+
+    border: 1px solid #e2e6e2;
+
+    border-radius: 20px;
+
+    color: #7c8580;
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    letter-spacing: .7px;
+
+}
+
+
+.live-dot {
+
+    width: 6px;
+
+    height: 6px;
+
+    background: #69a77f;
+
+    border-radius: 50%;
+
+}
+
+
+/* ==========================================
+   MAIN
+   ========================================== */
+
+main {
+
+    width: 86%;
+
+    max-width: 1080px;
+
+    margin: 25px auto 0;
+
+}
+
+
+/* ==========================================
+   HERO SECTION
+   ========================================== */
+
+.hero {
+
+    min-height: 190px;
+
+    background: #eaf2ec;
+
+    border: 1px solid #dce8df;
+
+    border-radius: 17px;
+
+    padding: 27px 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.eyebrow {
+
+    display: block;
+
+    font-size: 7px;
+
+    letter-spacing: 1.6px;
+
+    font-weight: bold;
+
+    color: #568c6a;
+
+    margin-bottom: 8px;
+
+}
+
+
+.hero h2 {
+
+    font-size: 28px;
+
+    line-height: 1.12;
+
+    color: #3e4743;
+
+    font-weight: 400;
+
+    margin-bottom: 9px;
+
+}
+
+
+.hero h2 strong {
+
+    font-weight: 700;
+
+    color: #477e5e;
+
+}
+
+
+.hero p {
+
+    max-width: 500px;
+
+    font-size: 9px;
+
+    line-height: 1.7;
+
+    color: #87918b;
+
+}
+
+
+/* ==========================================
+   MINI CHART
+   ========================================== */
+
+.hero-chart {
+
+    width: 240px;
+
+    height: 135px;
+
+    background: rgba(255,255,255,.62);
+
+    border: 1px solid #dbe7de;
+
+    border-radius: 15px;
+
+    padding: 16px;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+}
+
+
+.chart-label {
+
+    font-size: 7px;
+
+    letter-spacing: 1px;
+
+    color: #7b8981;
+
+    font-weight: bold;
+
+}
+
+
+.mini-chart {
+
+    height: 67px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    border-bottom: 1px solid #d8e2dc;
+
+}
+
+
+.bar {
+
+    width: 14px;
+
+    border-radius: 4px 4px 0 0;
+
+    background: #78a989;
+
+    opacity: .75;
+
+}
+
+
+.bar-1 {
+    height: 22px;
+}
+
+.bar-2 {
+    height: 34px;
+}
+
+.bar-3 {
+    height: 28px;
+}
+
+.bar-4 {
+    height: 47px;
+}
+
+.bar-5 {
+    height: 40px;
+}
+
+.bar-6 {
+    height: 56px;
+}
+
+.bar-7 {
+    height: 65px;
+}
+
+
+.chart-growth {
+
+    font-size: 7px;
+
+    color: #609170;
+
+}
+
+
+/* ==========================================
+   PORTFOLIO SECTION
+   ========================================== */
+
+.portfolio-section {
+
+    margin-top: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #e0e4df;
+
+    border-radius: 16px;
+
+    padding: 21px;
+
+}
+
+
+/* ==========================================
+   SECTION HEADING
+   ========================================== */
+
+.section-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+
+}
+
+
+.section-heading span {
+
+    display: block;
+
+    font-size: 7px;
+
+    letter-spacing: 1.5px;
+
+    font-weight: bold;
+
+    color: #659175;
+
+    margin-bottom: 5px;
+
+}
+
+
+.section-heading h2 {
+
+    font-size: 18px;
+
+    color: #414946;
+
+}
+
+
+.stock-count {
+
+    background: #f1f4f1;
+
+    border: 1px solid #e0e5e1;
+
+    border-radius: 20px;
+
+    padding: 7px 12px;
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    color: #818a85;
+
+}
+
+
+/* ==========================================
+   STOCK LIST
+   ========================================== */
+
+.stock-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+}
+
+
+/* ==========================================
+   MARKET ROW
+   ========================================== */
+
+.market-row {
+
+    min-height: 67px;
+
+    padding: 9px 12px;
+
+    background: #fafbfa;
+
+    border: 1px solid #e3e7e4;
+
+    border-radius: 10px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.6fr
+        1fr
+        1fr
+        40px;
+
+    align-items: center;
+
+    gap: 18px;
+
+    transition: all .2s ease;
+
+}
+
+
+.market-row:hover {
+
+    background: #ffffff;
+
+    border-color: #cfdad2;
+
+    transform: translateX(2px);
+
+    box-shadow:
+        0 5px 15px rgba(55, 70, 61, .05);
+
+}
+
+
+/* ==========================================
+   COMPANY
+   ========================================== */
+
+.company {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.company-logo {
+
+    width: 37px;
+
+    height: 37px;
+
+    border-radius: 9px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+}
+
+
+/* Different company colors */
+
+.logo-tcs {
+
+    background: #e8f3eb;
+
+    color: #4f9168;
+
+}
+
+
+.logo-infosys {
+
+    background: #e9f0f8;
+
+    color: #5e83aa;
+
+}
+
+
+.logo-reliance {
+
+    background: #fff0df;
+
+    color: #c28a4b;
+
+}
+
+
+.logo-hdfc {
+
+    background: #eee9f6;
+
+    color: #8066a0;
+
+}
+
+
+.logo-wipro {
+
+    background: #f7e8ed;
+
+    color: #b66f89;
+
+}
+
+
+.logo-axis {
+
+    background: #e5f1f0;
+
+    color: #4c8d88;
+
+}
+
+
+.company strong {
+
+    display: block;
+
+    font-size: 10px;
+
+    color: #454d4a;
+
+    margin-bottom: 3px;
+
+}
+
+
+.company span {
+
+    display: block;
+
+    font-size: 7px;
+
+    color: #9aa29e;
+
+}
+
+
+/* ==========================================
+   PRICE FIELD
+   ========================================== */
+
+.price-field label {
+
+    display: block;
+
+    font-size: 6px;
+
+    color: #929b96;
+
+    font-weight: bold;
+
+    letter-spacing: .7px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.input-box {
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #dfe4e1;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+
+}
+
+
+.input-box span {
+
+    width: 27px;
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #f1f3f1;
+
+    color: #77807b;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+}
+
+
+.input-box input {
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    padding: 0 8px;
+
+    background: transparent;
+
+    color: #4b5450;
+
+    font-size: 8px;
+
+}
+
+
+.input-box input::placeholder {
+
+    color: #b2b8b5;
+
+}
+
+
+.input-box:focus-within {
+
+    border-color: #91b49c;
+
+    box-shadow:
+        0 0 0 2px #edf5ef;
+
+}
+
+
+/* ==========================================
+   DIRECTION ICON
+   ========================================== */
+
+.direction {
+
+    width: 31px;
+
+    height: 31px;
+
+    border-radius: 50%;
+
+    background: #edf5ef;
+
+    color: #609575;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+
+/* ==========================================
+   FORM FOOTER
+   ========================================== */
+
+.form-footer {
+
+    margin-top: 15px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #e5e8e5;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+}
+
+
+/* ==========================================
+   CALCULATION INFO
+   ========================================== */
+
+.calculation-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+}
+
+
+.info-icon {
+
+    width: 28px;
+
+    height: 28px;
+
+    border-radius: 50%;
+
+    background: #f0f3f1;
+
+    color: #718078;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+}
+
+
+.calculation-info strong {
+
+    display: block;
+
+    font-size: 8px;
+
+    color: #626c67;
+
+    margin-bottom: 3px;
+
+}
+
+
+.calculation-info span {
+
+    display: block;
+
+    font-size: 7px;
+
+    color: #9aa29e;
+
+}
+
+
+/* ==========================================
+   SUBMIT BUTTON
+   ========================================== */
+
+.form-footer button {
+
+    border: none;
+
+    outline: none;
+
+    background: #46504c;
+
+    color: #ffffff;
+
+    padding: 12px 19px;
+
+    border-radius: 8px;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .2s ease;
+
+}
+
+
+.form-footer button:hover {
+
+    background: #343d39;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px rgba(45, 55, 50, .15);
+
+}
+
+
+.form-footer button span {
+
+    font-size: 13px;
+
+    margin-left: 8px;
+
+}
+
+
+/* ==========================================
+   BOTTOM NOTE
+   ========================================== */
+
+.bottom-note {
+
+    margin: 17px 0 25px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #dfe3df;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 6px;
+
+    letter-spacing: 1px;
+
+    color: #9ba39f;
+
+}
+
+
+.bottom-note .separator {
+
+    color: #c5cbc7;
+
+}
+
+
+/* ==========================================
+   TABLET
+   ========================================== */
+
+@media (max-width: 900px) {
+
+    main {
+
+        width: 90%;
+
+    }
+
+
+    .market-row {
+
+        grid-template-columns:
+            1.3fr
+            1fr
+            1fr
+            35px;
+
+        gap: 10px;
+
+    }
+
+
+    .hero-chart {
+
+        width: 200px;
+
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 700px) {
+
+    .topbar {
+
+        padding: 0 5%;
+
+    }
+
+
+    .market-indicator {
+
+        display: none;
+
+    }
+
+
+    main {
+
+        width: 92%;
+
+    }
+
+
+    .hero {
+
+        padding: 22px;
+
+    }
+
+
+    .hero-chart {
+
+        display: none;
+
+    }
+
+
+    .hero h2 {
+
+        font-size: 24px;
+
+    }
+
+
+    .portfolio-section {
+
+        padding: 15px;
+
+    }
+
+
+    .market-row {
+
+        grid-template-columns: 1fr;
+
+        gap: 11px;
+
+        padding: 14px;
+
+    }
+
+
+    .direction {
+
+        display: none;
+
+    }
+
+
+    .price-field {
+
+        width: 100%;
+
+    }
+
+
+    .form-footer {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .form-footer button {
+
+        width: 100%;
+
+    }
+
+
+    .bottom-note {
+
+        flex-wrap: wrap;
+
+        line-height: 1.8;
+
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+   ========================================== */
+
+@media (max-width: 450px) {
+
+    .brand-text h1 {
+
+        font-size: 15px;
+
+    }
+
+
+    .hero {
+
+        min-height: 160px;
+
+    }
+
+
+    .hero h2 {
+
+        font-size: 21px;
+
+    }
+
+
+    .section-heading {
+
+        align-items: flex-start;
+
+        gap: 10px;
+
+    }
+
+
+    .stock-count {
+
+        font-size: 6px;
+
+        padding: 6px 9px;
+
+    }
+
+}
