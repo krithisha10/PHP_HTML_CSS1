@@ -1,0 +1,1145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+   ========================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f8fc;
+    color: #39424e;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   PAGE
+   ========================================= */
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+    height: 76px;
+    width: 100%;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e8eaf0;
+
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* =========================================
+   BRAND
+   ========================================= */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.brand-icon {
+    width: 43px;
+    height: 43px;
+
+    border-radius: 12px;
+
+    background: #eeeaff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+}
+
+
+.eyebrow {
+    display: block;
+
+    font-size: 7px;
+
+    letter-spacing: 1.5px;
+
+    color: #8175bd;
+
+    font-weight: bold;
+
+    margin-bottom: 4px;
+}
+
+
+.brand h1 {
+    font-size: 18px;
+
+    color: #39424e;
+}
+
+
+/* =========================================
+   HEADER BADGE
+   ========================================= */
+
+.header-badge {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 8px 13px;
+
+    border-radius: 20px;
+
+    background: #f2f0ff;
+
+    border: 1px solid #e3defa;
+
+    color: #776bb1;
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    letter-spacing: .8px;
+}
+
+
+.badge-dot {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #897cc5;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+   ========================================= */
+
+.container {
+    width: 86%;
+    max-width: 1080px;
+
+    margin: 25px auto 35px;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+    min-height: 210px;
+
+    padding: 31px 34px;
+
+    border-radius: 19px;
+
+    background: #eeebff;
+
+    border: 1px solid #e1dcf8;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+
+.hero-tag {
+    display: block;
+
+    font-size: 7px;
+
+    letter-spacing: 1.5px;
+
+    color: #786bb0;
+
+    font-weight: bold;
+
+    margin-bottom: 9px;
+}
+
+
+.hero h2 {
+    font-size: 30px;
+
+    line-height: 1.15;
+
+    font-weight: 400;
+
+    color: #414957;
+
+    margin-bottom: 10px;
+}
+
+
+.hero h2 span {
+    color: #776ab2;
+
+    font-weight: bold;
+}
+
+
+.hero p {
+    max-width: 560px;
+
+    font-size: 9px;
+
+    line-height: 1.7;
+
+    color: #858692;
+}
+
+
+/* =========================================
+   HERO VISUAL
+   ========================================= */
+
+.hero-visual {
+    width: 240px;
+    height: 165px;
+
+    position: relative;
+}
+
+
+.floating-card {
+    position: absolute;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e1ed;
+
+    border-radius: 9px;
+
+    padding: 10px 15px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    color: #535c67;
+
+    box-shadow:
+        0 9px 22px rgba(65, 62, 85, .08);
+}
+
+
+.card-one {
+    top: 4px;
+    left: 10px;
+
+    transform: rotate(-5deg);
+
+    color: #6389a2;
+}
+
+
+.card-two {
+    top: 51px;
+    right: 7px;
+
+    transform: rotate(4deg);
+
+    color: #8c70aa;
+}
+
+
+.card-three {
+    bottom: 8px;
+    left: 30px;
+
+    transform: rotate(-3deg);
+
+    color: #6c9a78;
+}
+
+
+.sort-symbol {
+    position: absolute;
+
+    width: 58px;
+    height: 58px;
+
+    left: 83px;
+    top: 52px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    border: 1px solid #dfdbea;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #7b70b2;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 12px 25px rgba(60, 55, 80, .09);
+
+    z-index: 3;
+}
+
+
+/* =========================================
+   PRODUCT PANEL
+   ========================================= */
+
+.product-panel {
+    margin-top: 20px;
+
+    padding: 23px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3e5ea;
+
+    border-radius: 16px;
+}
+
+
+/* =========================================
+   PANEL HEADER
+   ========================================= */
+
+.panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+}
+
+
+.panel-header span {
+    display: block;
+
+    font-size: 7px;
+
+    letter-spacing: 1.4px;
+
+    color: #8175b9;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+.panel-header h2 {
+    font-size: 18px;
+
+    color: #424b56;
+}
+
+
+.product-count {
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+
+    background: #f0edff;
+
+    color: #776bb0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 8px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   PRODUCT ROW
+   ========================================= */
+
+.product-row {
+    display: grid;
+
+    grid-template-columns: 42px 1fr 190px;
+
+    gap: 14px;
+
+    align-items: center;
+
+    padding: 12px;
+
+    margin-bottom: 9px;
+
+    border-radius: 11px;
+
+    transition: .2s ease;
+}
+
+
+.product-row:nth-of-type(1) {
+    background: #f3f8fb;
+    border: 1px solid #e0ebf1;
+}
+
+
+.product-row:nth-of-type(2) {
+    background: #f5f2fb;
+    border: 1px solid #e7e0f2;
+}
+
+
+.product-row:nth-of-type(3) {
+    background: #f2f8f3;
+    border: 1px solid #dfebe1;
+}
+
+
+.product-row:nth-of-type(4) {
+    background: #fff6ed;
+    border: 1px solid #f0e4d4;
+}
+
+
+.product-row:hover {
+    transform: translateX(3px);
+
+    box-shadow:
+        0 5px 14px rgba(50, 60, 70, .06);
+}
+
+
+/* =========================================
+   PRODUCT NUMBER
+   ========================================= */
+
+.product-number {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+    color: #77818a;
+
+    box-shadow:
+        0 2px 7px rgba(40, 50, 60, .04);
+}
+
+
+.product-row:nth-of-type(1)
+.product-number {
+    color: #628aa4;
+}
+
+
+.product-row:nth-of-type(2)
+.product-number {
+    color: #866eaa;
+}
+
+
+.product-row:nth-of-type(3)
+.product-number {
+    color: #639271;
+}
+
+
+.product-row:nth-of-type(4)
+.product-number {
+    color: #b17e4d;
+}
+
+
+/* =========================================
+   LABELS
+   ========================================= */
+
+.product-info label,
+.product-price label {
+    display: block;
+
+    font-size: 6px;
+
+    letter-spacing: .8px;
+
+    color: #899198;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================
+   INPUTS
+   ========================================= */
+
+.product-info input,
+.product-price input {
+    width: 100%;
+
+    height: 35px;
+
+    border: 1px solid #dedfe3;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    outline: none;
+
+    padding: 0 10px;
+
+    font-size: 8px;
+
+    color: #4e5962;
+
+    transition: .2s ease;
+}
+
+
+.product-info input::placeholder,
+.product-price input::placeholder {
+    color: #b0b4b7;
+}
+
+
+.product-info input:focus,
+.product-price input:focus {
+    border-color: #a79bcf;
+
+    box-shadow:
+        0 0 0 3px #efecfa;
+}
+
+
+/* =========================================
+   PRICE INPUT
+   ========================================= */
+
+.product-price input {
+    font-weight: bold;
+
+    font-size: 10px;
+}
+
+
+/* =========================================
+   SORTING SECTION
+   ========================================= */
+
+.sorting-section {
+
+    margin-top: 19px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #e9e9ec;
+}
+
+
+.sorting-title {
+    margin-bottom: 12px;
+}
+
+
+.sorting-title span {
+    display: block;
+
+    font-size: 7px;
+
+    letter-spacing: 1.3px;
+
+    color: #8175b9;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+.sorting-title h3 {
+    font-size: 12px;
+
+    color: #555e67;
+}
+
+
+/* =========================================
+   SORT OPTIONS
+   ========================================= */
+
+.sort-options {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 11px;
+}
+
+
+.sort-option {
+    cursor: pointer;
+}
+
+
+.sort-option input {
+    display: none;
+}
+
+
+.sort-box {
+    min-height: 65px;
+
+    border: 1px solid #e2e3e7;
+
+    border-radius: 10px;
+
+    padding: 11px 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    background: #fafafa;
+
+    transition: .2s ease;
+}
+
+
+.sort-box:hover {
+    border-color: #c7c1df;
+
+    background: #faf9ff;
+}
+
+
+/* SELECTED LOW TO HIGH */
+
+.sort-option input:checked
++ .sort-box {
+
+    background: #eef7f0;
+
+    border-color: #cfe3d3;
+
+    box-shadow:
+        0 4px 12px rgba(70, 120, 80, .06);
+}
+
+
+/* =========================================
+   SORT ICON
+   ========================================= */
+
+.sort-icon {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 9px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+
+.sort-icon.green {
+    background: #dfeee2;
+
+    color: #5f916b;
+}
+
+
+.sort-icon.orange {
+    background: #f9e8d7;
+
+    color: #ae7948;
+}
+
+
+.sort-box strong {
+    display: block;
+
+    font-size: 8px;
+
+    color: #59636a;
+
+    margin-bottom: 4px;
+}
+
+
+.sort-box small {
+    display: block;
+
+    font-size: 6px;
+
+    color: #9ca1a3;
+}
+
+
+/* =========================================
+   SUBMIT AREA
+   ========================================= */
+
+.submit-area {
+
+    margin-top: 18px;
+
+    padding-top: 16px;
+
+    border-top: 1px solid #e9e9ec;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.function-note {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.function-note span {
+    padding: 6px 8px;
+
+    border-radius: 6px;
+
+    background: #eeebff;
+
+    color: #776bb1;
+
+    font-size: 6px;
+
+    font-weight: bold;
+}
+
+
+.function-note p {
+    font-size: 7px;
+
+    color: #999fa3;
+}
+
+
+/* =========================================
+   BUTTON
+   ========================================= */
+
+.submit-area button {
+    border: none;
+
+    outline: none;
+
+    cursor: pointer;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    background: #7468ad;
+
+    color: #ffffff;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+    transition: .2s ease;
+}
+
+
+.submit-area button:hover {
+    background: #62579a;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 17px rgba(100, 88, 155, .17);
+}
+
+
+.submit-area button span {
+    margin-left: 8px;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   CONCEPT SECTION
+   ========================================= */
+
+.concept-section {
+
+    margin-top: 20px;
+
+    padding: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3e5ea;
+
+    border-radius: 15px;
+}
+
+
+.section-title {
+    margin-bottom: 15px;
+}
+
+
+.section-title span {
+    display: block;
+
+    font-size: 7px;
+
+    letter-spacing: 1.4px;
+
+    color: #8175b9;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+.section-title h2 {
+    font-size: 17px;
+
+    color: #444d56;
+}
+
+
+/* =========================================
+   CONCEPT GRID
+   ========================================= */
+
+.concept-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 10px;
+}
+
+
+.concept-card {
+
+    min-height: 115px;
+
+    padding: 14px;
+
+    border-radius: 11px;
+
+    border: 1px solid;
+}
+
+
+.concept-card.purple {
+    background: #f3f0ff;
+
+    border-color: #e3def7;
+}
+
+
+.concept-card.blue {
+    background: #eef5f9;
+
+    border-color: #dce9ef;
+}
+
+
+.concept-card.green {
+    background: #eef7f0;
+
+    border-color: #dceade;
+}
+
+
+.concept-icon {
+
+    width: 35px;
+    height: 35px;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.purple .concept-icon {
+    color: #796cb1;
+}
+
+
+.blue .concept-icon {
+    color: #648aa1;
+}
+
+
+.green .concept-icon {
+    color: #62916d;
+}
+
+
+.concept-card h3 {
+
+    font-size: 9px;
+
+    color: #555f67;
+
+    margin-bottom: 5px;
+}
+
+
+.concept-card p {
+
+    font-size: 7px;
+
+    line-height: 1.6;
+
+    color: #969ca0;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+
+    margin-top: 20px;
+
+    padding-top: 17px;
+
+    border-top: 1px solid #dedfe3;
+
+    text-align: center;
+
+    font-size: 6px;
+
+    letter-spacing: 1px;
+
+    color: #9da2a5;
+}
+
+
+footer span {
+    margin: 0 6px;
+
+    color: #c3c5c7;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 850px) {
+
+    .container {
+        width: 90%;
+    }
+
+
+    .hero-visual {
+        width: 190px;
+    }
+
+
+    .product-row {
+        grid-template-columns:
+            38px 1fr 150px;
+    }
+
+
+    .concept-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 650px) {
+
+    .header {
+        padding: 0 5%;
+    }
+
+
+    .header-badge {
+        display: none;
+    }
+
+
+    .container {
+        width: 92%;
+    }
+
+
+    .hero {
+        padding: 24px;
+    }
+
+
+    .hero-visual {
+        display: none;
+    }
+
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+
+    .product-panel,
+    .concept-section {
+        padding: 16px;
+    }
+
+
+    .product-row {
+        grid-template-columns:
+            35px 1fr;
+
+        gap: 10px;
+    }
+
+
+    .product-price {
+        grid-column: 2;
+    }
+
+
+    .sort-options {
+        grid-template-columns: 1fr;
+    }
+
+
+    .submit-area {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 12px;
+    }
+
+
+    .submit-area button {
+        width: 100%;
+    }
+
+
+    .concept-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 430px) {
+
+    .brand h1 {
+        font-size: 15px;
+    }
+
+
+    .brand-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+
+    .panel-header h2 {
+        font-size: 16px;
+    }
+
+}
