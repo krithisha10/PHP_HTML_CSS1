@@ -1,0 +1,763 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7f6;
+    color: #35433f;
+    min-height: 100vh;
+}
+
+.page {
+    width: 100%;
+    padding: 30px 6% 22px;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.brand-icon {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background: #dcefe7;
+    color: #3d8b6c;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.small-label {
+    display: block;
+    font-size: 8px;
+    letter-spacing: 1.8px;
+    font-weight: bold;
+    color: #4b8a70;
+    margin-bottom: 5px;
+}
+
+.header h1 {
+    font-size: 25px;
+    color: #35433f;
+}
+
+.header p {
+    font-size: 9px;
+    color: #8d9894;
+    margin-top: 5px;
+}
+
+.secure-badge {
+    padding: 9px 14px;
+    border-radius: 8px;
+    background: #ffffff;
+    border: 1px solid #dce5e1;
+    color: #52816d;
+    font-size: 8px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+    min-height: 175px;
+    padding: 30px 35px;
+    border-radius: 18px;
+    background: #e3eee9;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    overflow: hidden;
+
+    margin-bottom: 22px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    border-radius: 50%;
+
+    right: -70px;
+    top: -115px;
+
+    background: rgba(255, 255, 255, 0.38);
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+
+    right: 80px;
+    bottom: -80px;
+
+    background: rgba(255, 255, 255, 0.22);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content > span {
+    font-size: 8px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #43836a;
+}
+
+.hero-content h2 {
+    font-size: 28px;
+    color: #354941;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.hero-content p {
+    max-width: 620px;
+    font-size: 10px;
+    line-height: 1.6;
+    color: #6e7e77;
+}
+
+.hero-circle {
+    position: relative;
+    z-index: 3;
+
+    width: 84px;
+    height: 84px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 10px 25px rgba(60, 100, 80, 0.08);
+}
+
+.rupee {
+    width: 56px;
+    height: 56px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #dcefe7;
+
+    color: #43836a;
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   CALCULATOR
+   ========================================= */
+
+.calculator {
+    background: #ffffff;
+
+    border: 1px solid #e1e8e4;
+
+    border-radius: 16px;
+
+    padding: 25px;
+
+    box-shadow: 0 7px 20px rgba(50, 70, 60, 0.04);
+}
+
+.section-title {
+    margin-bottom: 20px;
+}
+
+.section-title span {
+    display: block;
+
+    font-size: 8px;
+
+    letter-spacing: 1.7px;
+
+    font-weight: bold;
+
+    color: #4b8a70;
+
+    margin-bottom: 5px;
+}
+
+.section-title h2 {
+    font-size: 20px;
+
+    color: #384841;
+}
+
+
+/* =========================================
+   INPUT GRID
+   ========================================= */
+
+.input-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 14px;
+}
+
+
+/* =========================================
+   INPUT CARD
+   ========================================= */
+
+.input-card {
+    padding: 18px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e1e8e4;
+
+    min-height: 220px;
+
+    transition: 0.2s ease;
+}
+
+.input-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 18px rgba(50, 70, 60, 0.07);
+}
+
+
+/* Different colors */
+
+.amount-card {
+    background: #f1f8f4;
+
+    border-top: 4px solid #5da27f;
+}
+
+.interest-card {
+    background: #f5f1f9;
+
+    border-top: 4px solid #8e78a8;
+}
+
+.tenure-card {
+    background: #fff5e9;
+
+    border-top: 4px solid #d29458;
+}
+
+
+/* =========================================
+   INPUT TOP
+   ========================================= */
+
+.input-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 17px;
+}
+
+.input-top span {
+    font-size: 7px;
+
+    letter-spacing: 1px;
+
+    font-weight: bold;
+
+    color: #9ba5a1;
+}
+
+.input-icon {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #dcefe7;
+
+    color: #46846a;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+.interest-card .input-icon {
+    background: #ebe4f1;
+    color: #806b9a;
+}
+
+.tenure-card .input-icon {
+    background: #f8e9d4;
+    color: #b57b43;
+}
+
+
+/* =========================================
+   LABEL
+   ========================================= */
+
+.input-card label {
+    display: block;
+
+    font-size: 7px;
+
+    letter-spacing: 0.9px;
+
+    font-weight: bold;
+
+    color: #66736e;
+
+    margin-bottom: 7px;
+}
+
+
+/* =========================================
+   INPUT WRAPPER
+   ========================================= */
+
+.input-wrapper {
+    height: 45px;
+
+    background: #ffffff;
+
+    border: 1px solid #dce4e0;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 12px;
+
+    gap: 7px;
+
+    transition: 0.2s ease;
+}
+
+.input-wrapper:focus-within {
+    border-color: #67a487;
+
+    box-shadow:
+        0 0 0 3px rgba(80, 145, 110, 0.09);
+}
+
+.input-wrapper > span {
+    font-size: 12px;
+
+    font-weight: bold;
+
+    color: #70817a;
+
+    white-space: nowrap;
+}
+
+.input-wrapper input {
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-size: 11px;
+
+    color: #45534e;
+}
+
+.input-wrapper input::placeholder {
+    color: #b0b8b5;
+}
+
+
+/* Remove number arrows */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    appearance: textfield;
+}
+
+
+/* =========================================
+   CARD DESCRIPTION
+   ========================================= */
+
+.input-card p {
+    font-size: 8px;
+
+    line-height: 1.5;
+
+    color: #8b9691;
+
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   FORMULA BOX
+   ========================================= */
+
+.formula-box {
+    margin-top: 20px;
+
+    padding: 14px 17px;
+
+    border-radius: 10px;
+
+    background: #f5f8f6;
+
+    border: 1px solid #e1e9e4;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+}
+
+.formula-icon {
+    width: 40px;
+    height: 40px;
+
+    min-width: 40px;
+
+    border-radius: 9px;
+
+    background: #e1f0e8;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #4a8b6e;
+
+    font-size: 17px;
+
+    font-weight: bold;
+}
+
+.formula-box strong {
+    display: block;
+
+    font-size: 9px;
+
+    color: #50605a;
+
+    margin-bottom: 4px;
+}
+
+.formula-box p {
+    font-size: 7px;
+
+    color: #8c9692;
+}
+
+.formula {
+    margin-left: auto;
+
+    padding: 9px 13px;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    border: 1px solid #dfe7e3;
+
+    color: #54846f;
+
+    font-size: 8px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   BUTTON
+   ========================================= */
+
+.button-area {
+    text-align: center;
+
+    margin-top: 20px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #e5ebe8;
+}
+
+.button-area button {
+    border: none;
+
+    background: #4d8c70;
+
+    color: #ffffff;
+
+    padding: 13px 25px;
+
+    border-radius: 8px;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.button-area button span {
+    margin-left: 7px;
+
+    font-size: 13px;
+}
+
+.button-area button:hover {
+    background: #3e765d;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 16px rgba(60, 120, 90, 0.17);
+}
+
+.button-area p {
+    margin-top: 9px;
+
+    font-size: 7px;
+
+    color: #9ba4a0;
+}
+
+
+/* =========================================
+   FEATURES
+   ========================================= */
+
+.features {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 13px;
+
+    margin-top: 20px;
+}
+
+.feature {
+    background: #ffffff;
+
+    border: 1px solid #e2e8e5;
+
+    border-radius: 11px;
+
+    padding: 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+.feature-icon {
+    width: 36px;
+    height: 36px;
+
+    border-radius: 9px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #e3f1ea;
+
+    color: #4d8d70;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+.feature:nth-child(2) .feature-icon {
+    background: #eee8f4;
+
+    color: #806b99;
+}
+
+.feature:nth-child(3) .feature-icon {
+    background: #faeedf;
+
+    color: #b27d47;
+}
+
+.feature strong {
+    display: block;
+
+    font-size: 9px;
+
+    color: #52605b;
+
+    margin-bottom: 3px;
+}
+
+.feature p {
+    font-size: 7px;
+
+    color: #919b97;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    text-align: center;
+
+    margin-top: 20px;
+
+    padding-top: 12px;
+
+    border-top: 1px solid #dfe6e2;
+
+    font-size: 8px;
+
+    color: #9ba4a0;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .input-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .page {
+        padding: 22px 5% 20px;
+    }
+
+    .secure-badge {
+        display: none;
+    }
+
+    .hero {
+        padding: 25px;
+    }
+
+    .hero-circle {
+        width: 65px;
+        height: 65px;
+    }
+
+    .rupee {
+        width: 45px;
+        height: 45px;
+    }
+
+    .input-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .formula-box {
+        align-items: flex-start;
+    }
+
+    .formula {
+        display: none;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero-circle {
+        display: none;
+    }
+
+    .calculator {
+        padding: 18px;
+    }
+}
