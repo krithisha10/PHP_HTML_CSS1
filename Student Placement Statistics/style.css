@@ -1,0 +1,959 @@
+/* =========================================
+   RESET
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+   ========================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f3ee;
+    color: #41443f;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   PAGE
+   ========================================= */
+
+.page {
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+    width: 100%;
+    height: 78px;
+
+    padding: 0 7%;
+
+    background: #fffdf9;
+
+    border-bottom: 1px solid #e3dfd6;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* =========================================
+   BRAND
+   ========================================= */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+
+.logo {
+    width: 43px;
+    height: 43px;
+
+    border-radius: 10px;
+
+    background: #e8e3d9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 19px;
+}
+
+
+.brand span {
+    display: block;
+
+    font-size: 6px;
+
+    color: #8a7558;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 4px;
+}
+
+
+.brand h1 {
+    font-size: 18px;
+
+    color: #41433e;
+}
+
+
+/* =========================================
+   BATCH YEAR
+   ========================================= */
+
+.year {
+    padding: 8px 12px;
+
+    border-radius: 20px;
+
+    background: #eef3ec;
+
+    border: 1px solid #dce6da;
+
+    color: #6d826b;
+
+    font-size: 6px;
+
+    font-weight: bold;
+
+    letter-spacing: 0.8px;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+   ========================================= */
+
+.container {
+    width: 86%;
+
+    max-width: 1050px;
+
+    margin: 30px auto;
+}
+
+
+/* =========================================
+   INTRO SECTION
+   ========================================= */
+
+.intro {
+    background: #efebe2;
+
+    border: 1px solid #e1dbcf;
+
+    border-radius: 14px;
+
+    padding: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 17px;
+}
+
+
+.label {
+    display: block;
+
+    font-size: 6px;
+
+    color: #897355;
+
+    font-weight: bold;
+
+    letter-spacing: 1.4px;
+
+    margin-bottom: 8px;
+}
+
+
+.intro h2 {
+    font-size: 26px;
+
+    line-height: 1.2;
+
+    color: #41433e;
+
+    margin-bottom: 8px;
+}
+
+
+.intro h2 strong {
+    color: #887252;
+}
+
+
+.intro p {
+    font-size: 8px;
+
+    color: #929089;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   INTRO ICON
+   ========================================= */
+
+.intro-icon {
+    width: 65px;
+    height: 65px;
+
+    border-radius: 15px;
+
+    background: #fffdf9;
+
+    border: 1px solid #dfd9ce;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 27px;
+}
+
+
+/* =========================================
+   FORM CARD
+   ========================================= */
+
+.form-card {
+    background: #fffdf9;
+
+    border: 1px solid #e1ddd4;
+
+    border-radius: 13px;
+
+    padding: 24px;
+
+    margin-bottom: 16px;
+
+    text-align: center;
+}
+
+
+.form-title span {
+    display: block;
+
+    font-size: 6px;
+
+    color: #897355;
+
+    letter-spacing: 1.3px;
+
+    font-weight: bold;
+
+    margin-bottom: 6px;
+}
+
+
+.form-title h3 {
+    font-size: 17px;
+
+    color: #484a44;
+
+    margin-bottom: 6px;
+}
+
+
+.form-title p {
+    font-size: 7px;
+
+    color: #99968f;
+
+    margin-bottom: 17px;
+}
+
+
+/* =========================================
+   GENERATE BUTTON
+   ========================================= */
+
+form button {
+    border: none;
+
+    padding: 12px 21px;
+
+    border-radius: 8px;
+
+    background: #897254;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+form button span {
+    margin-left: 8px;
+
+    font-size: 11px;
+}
+
+
+form button:hover {
+    background: #725d42;
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 6px 14px rgba(92, 73, 46, 0.15);
+}
+
+
+/* =========================================
+   INFORMATION CARDS
+   ========================================= */
+
+.info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+}
+
+
+.info-card {
+    background: #fffdf9;
+
+    border: 1px solid #e2ddd4;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    transition: 0.2s ease;
+}
+
+
+.info-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 14px rgba(70, 60, 45, 0.06);
+}
+
+
+.info-icon {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 8px;
+
+    background: #f0ece3;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 13px;
+}
+
+
+.info-card strong {
+    display: block;
+
+    font-size: 8px;
+
+    color: #5a5b54;
+
+    margin-bottom: 4px;
+}
+
+
+.info-card p {
+    font-size: 6px;
+
+    color: #9a9891;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    margin-top: 24px;
+
+    padding-top: 16px;
+
+    border-top: 1px solid #e1ddd5;
+
+    text-align: center;
+
+    font-size: 6px;
+
+    color: #aaa69e;
+
+    letter-spacing: 0.8px;
+}
+
+
+footer span {
+    color: #80796e;
+
+    font-weight: bold;
+}
+
+
+footer i {
+    font-style: normal;
+
+    margin: 0 7px;
+
+    color: #cbc7bf;
+}
+
+
+/* =========================================
+   REPORT HEADER
+   ========================================= */
+
+.report-header {
+    background: #efebe2;
+
+    border: 1px solid #e1dbcf;
+
+    border-radius: 13px;
+
+    padding: 22px;
+
+    margin-bottom: 15px;
+}
+
+
+.report-header span {
+    display: block;
+
+    font-size: 6px;
+
+    color: #897355;
+
+    letter-spacing: 1.3px;
+
+    font-weight: bold;
+
+    margin-bottom: 6px;
+}
+
+
+.report-header h2 {
+    font-size: 22px;
+
+    color: #41433e;
+
+    margin-bottom: 5px;
+}
+
+
+.report-header p {
+    font-size: 7px;
+
+    color: #96938c;
+}
+
+
+/* =========================================
+   STATISTICS
+   ========================================= */
+
+.statistics {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 9px;
+
+    margin-bottom: 15px;
+}
+
+
+.stat {
+    background: #fffdf9;
+
+    border: 1px solid #e1ddd4;
+
+    border-radius: 10px;
+
+    padding: 14px;
+}
+
+
+.stat span {
+    display: block;
+
+    font-size: 5px;
+
+    color: #99968f;
+
+    letter-spacing: 0.8px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+
+.stat strong {
+    font-size: 19px;
+
+    color: #897254;
+}
+
+
+/* Different statistic accents */
+
+.stat:nth-child(2) strong {
+    color: #65806b;
+}
+
+
+.stat:nth-child(3) strong {
+    color: #806f91;
+}
+
+
+.stat:nth-child(4) strong {
+    color: #9a755d;
+}
+
+
+/* =========================================
+   REPORT CARD
+   ========================================= */
+
+.report-card {
+    background: #fffdf9;
+
+    border: 1px solid #e1ddd4;
+
+    border-radius: 13px;
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+}
+
+
+.report-title {
+    margin-bottom: 13px;
+}
+
+
+.report-title span {
+    display: block;
+
+    font-size: 6px;
+
+    color: #897355;
+
+    letter-spacing: 1.2px;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+.report-title h3 {
+    font-size: 15px;
+
+    color: #484a44;
+}
+
+
+/* =========================================
+   TABLE WRAPPER
+   ========================================= */
+
+.table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+
+    border: 1px solid #e1ddd5;
+
+    border-radius: 9px;
+}
+
+
+/* =========================================
+   TABLE
+   ========================================= */
+
+table {
+    width: 100%;
+
+    min-width: 700px;
+
+    border-collapse: collapse;
+}
+
+
+th {
+    height: 40px;
+
+    padding: 0 10px;
+
+    background: #f3f0e9;
+
+    border-bottom: 1px solid #dfdbd2;
+
+    text-align: left;
+
+    font-size: 5px;
+
+    color: #817d74;
+
+    letter-spacing: 0.8px;
+}
+
+
+td {
+    height: 49px;
+
+    padding: 7px 10px;
+
+    border-bottom: 1px solid #eeeae3;
+
+    font-size: 7px;
+
+    color: #77766f;
+}
+
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+
+tbody tr {
+    transition: 0.2s ease;
+}
+
+
+tbody tr:hover {
+    background: #faf8f3;
+}
+
+
+/* =========================================
+   RANK BADGE
+   ========================================= */
+
+.rank {
+    width: 27px;
+    height: 27px;
+
+    border-radius: 7px;
+
+    background: #eee9df;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #887253;
+
+    font-size: 6px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   STUDENT NAME
+   ========================================= */
+
+.student {
+    font-size: 8px !important;
+
+    font-weight: bold;
+
+    color: #50524b !important;
+}
+
+
+/* =========================================
+   COMPANY
+   ========================================= */
+
+.company {
+    color: #74766f;
+}
+
+
+/* =========================================
+   PACKAGE
+   ========================================= */
+
+.package {
+    font-weight: bold;
+
+    color: #897254 !important;
+}
+
+
+/* =========================================
+   DEPARTMENT RANKING
+   ========================================= */
+
+.department-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 9px;
+}
+
+
+.department-card {
+    padding: 15px;
+
+    background: #f8f5ef;
+
+    border: 1px solid #e3ded4;
+
+    border-radius: 9px;
+
+    transition: 0.2s ease;
+}
+
+
+.department-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 12px rgba(70, 60, 45, 0.05);
+}
+
+
+/* =========================================
+   DEPARTMENT RANK
+   ========================================= */
+
+.department-rank {
+    width: 27px;
+    height: 27px;
+
+    border-radius: 7px;
+
+    background: #897254;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   DEPARTMENT TEXT
+   ========================================= */
+
+.department-card h4 {
+    font-size: 9px;
+
+    color: #55574f;
+
+    margin-bottom: 9px;
+}
+
+
+.department-card p {
+    font-size: 6px;
+
+    color: #929088;
+
+    margin-bottom: 5px;
+}
+
+
+.department-card strong {
+    color: #70604a;
+}
+
+
+/* =========================================
+   BACK BUTTON
+   ========================================= */
+
+.back-button {
+    text-align: center;
+
+    margin-top: 16px;
+}
+
+
+.back-button a {
+    display: inline-block;
+
+    text-decoration: none;
+
+    padding: 10px 17px;
+
+    border-radius: 7px;
+
+    background: #897254;
+
+    color: white;
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    transition: 0.2s ease;
+}
+
+
+.back-button a:hover {
+    background: #725d42;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .statistics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .department-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 750px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 550px) {
+
+    .header {
+        padding: 0 5%;
+    }
+
+    .year {
+        display: none;
+    }
+
+    .brand h1 {
+        font-size: 15px;
+    }
+
+    .intro {
+        padding: 19px;
+
+        align-items: flex-start;
+    }
+
+    .intro h2 {
+        font-size: 22px;
+    }
+
+    .intro-icon {
+        width: 50px;
+        height: 50px;
+
+        font-size: 20px;
+    }
+
+    .form-card {
+        padding: 20px 15px;
+    }
+
+    .statistics {
+        grid-template-columns: 1fr;
+    }
+
+    .report-card {
+        padding: 14px;
+    }
+
+}
+
+
+/* =========================================
+   EXTRA SMALL SCREEN
+   ========================================= */
+
+@media (max-width: 400px) {
+
+    .logo {
+        width: 38px;
+        height: 38px;
+
+        font-size: 16px;
+    }
+
+    .brand h1 {
+        font-size: 13px;
+    }
+
+    .intro h2 {
+        font-size: 20px;
+    }
+
+    .intro-icon {
+        display: none;
+    }
+
+}
