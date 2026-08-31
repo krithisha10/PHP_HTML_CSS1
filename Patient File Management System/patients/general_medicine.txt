@@ -1,0 +1,3 @@
+P4001|Anjali S|29|Female|Fever|Dr. Meena|Room 101
+P4002|Ravi Kumar|48|Male|Diabetes|Dr. Meena|Room 103
+P4003|Priya K|36|Female|Respiratory Infection|Dr. Arun|Room 105

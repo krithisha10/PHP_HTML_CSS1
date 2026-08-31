@@ -1,0 +1,3 @@
+P2001|Divya Sharma|34|Female|Migraine|Dr. Anitha|Room 301
+P2002|Suresh Kumar|61|Male|Memory Disorder|Dr. Anitha|Room 302
+P2003|Kavya R|27|Female|Severe Headache|Dr. Arun|Room 305
