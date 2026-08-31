@@ -1,0 +1,1115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f8fb;
+    color: #394451;
+}
+
+.page {
+    min-height: 100vh;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    height: 74px;
+    padding: 0 8%;
+    background: #ffffff;
+    border-bottom: 1px solid #e5ebf0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.cloud-logo {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 13px;
+
+    background: #e7f4f7;
+    color: #4d9eae;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+}
+
+.brand h1 {
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-weight: 500;
+    color: #3f4a54;
+}
+
+.brand span {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #9da6ae;
+
+    font-size: 5.5px;
+
+    letter-spacing: 1px;
+}
+
+.cloud-status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #98a1a9;
+
+    font-size: 5.5px;
+    letter-spacing: .8px;
+}
+
+.status-dot {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #65ae91;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 310px;
+
+    padding: 42px 10%;
+
+    background:
+        linear-gradient(
+            115deg,
+            #e7f5f7,
+            #eef8fa
+        );
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    overflow: hidden;
+}
+
+.hero-text {
+    max-width: 610px;
+}
+
+.hero-tag {
+    display: inline-block;
+
+    padding: 7px 11px;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    color: #4e98a5;
+
+    font-size: 5.5px;
+
+    letter-spacing: 1px;
+
+    font-weight: 800;
+}
+
+.hero h2 {
+    margin-top: 15px;
+
+    font-family: Georgia, serif;
+
+    font-size: 39px;
+
+    line-height: 1.08;
+
+    font-weight: 400;
+
+    color: #3d4a54;
+}
+
+.hero h2 strong {
+    color: #4b99a7;
+
+    font-weight: 500;
+}
+
+.hero p {
+    margin-top: 13px;
+
+    max-width: 520px;
+
+    color: #76838d;
+
+    font-size: 8px;
+
+    line-height: 1.8;
+}
+
+.hero-button {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 11px 17px;
+
+    border-radius: 8px;
+
+    background: #4d9ca9;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 6px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   CLOUD ART
+========================= */
+
+.cloud-illustration {
+    width: 300px;
+    height: 220px;
+
+    position: relative;
+
+    margin-right: 5%;
+}
+
+.big-cloud {
+    position: absolute;
+
+    top: 30px;
+    left: 30px;
+
+    font-size: 145px;
+
+    color: #c4e4e9;
+}
+
+.floating-folder {
+    position: absolute;
+
+    width: 65px;
+    height: 65px;
+
+    border-radius: 17px;
+
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+
+    box-shadow:
+        0 12px 30px
+        rgba(64,105,117,.12);
+}
+
+.folder-one {
+    top: 25px;
+    right: 30px;
+}
+
+.folder-two {
+    bottom: 25px;
+    left: 10px;
+}
+
+.folder-three {
+    bottom: 10px;
+    right: 55px;
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.message {
+    width: 84%;
+    max-width: 1150px;
+
+    margin: 20px auto 0;
+
+    padding: 12px 15px;
+
+    border-radius: 9px;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    font-size: 7px;
+}
+
+.message.success {
+    background: #e8f6ef;
+    color: #4b9076;
+}
+
+.message.error {
+    background: #fff0f0;
+    color: #ad6369;
+}
+
+.message span {
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================
+   STATISTICS
+========================= */
+
+.stats {
+    width: 84%;
+    max-width: 1150px;
+
+    margin: 25px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 13px;
+}
+
+.stat-card {
+    padding: 15px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3e9ee;
+
+    border-radius: 13px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.stat-icon {
+    width: 39px;
+    height: 39px;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.stat-icon.total {
+    background: #e7f4f7;
+    color: #4d9ba8;
+}
+
+.stat-icon.pdf {
+    background: #fff0ee;
+    color: #c77b70;
+}
+
+.stat-icon.word {
+    background: #edf1fb;
+    color: #7185bc;
+}
+
+.stat-icon.excel {
+    background: #eaf6ee;
+    color: #64a278;
+}
+
+.stat-card span {
+    color: #9ba3aa;
+
+    font-size: 5px;
+
+    letter-spacing: .7px;
+
+    font-weight: 700;
+}
+
+.stat-card h3 {
+    margin-top: 4px;
+
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    font-weight: 500;
+
+    color: #46515a;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    width: 84%;
+    max-width: 1150px;
+
+    margin: 32px auto 50px;
+}
+
+
+/* =========================
+   LIBRARY HEADER
+========================= */
+
+.library-header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+.library-header span,
+.storage-heading span {
+    color: #9aa2aa;
+
+    font-size: 5.5px;
+
+    letter-spacing: 1px;
+
+    font-weight: 700;
+}
+
+.library-header h2,
+.storage-heading h2 {
+    margin-top: 5px;
+
+    font-family: Georgia, serif;
+
+    font-size: 21px;
+
+    font-weight: 500;
+
+    color: #48535d;
+}
+
+
+/* =========================
+   FILTERS
+========================= */
+
+.filters {
+    display: flex;
+    gap: 5px;
+}
+
+.filters a {
+    padding: 8px 13px;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #e0e6eb;
+
+    color: #8b949d;
+
+    text-decoration: none;
+
+    font-size: 6px;
+}
+
+.filters a.active,
+.filters a:hover {
+    background: #4d9ca9;
+
+    color: #ffffff;
+
+    border-color: #4d9ca9;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.document-search {
+    height: 43px;
+
+    margin-bottom: 18px;
+
+    padding: 4px 5px 4px 13px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e7ec;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.document-search span {
+    font-size: 17px;
+    color: #9ba7af;
+}
+
+.document-search input {
+    flex: 1;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #58636c;
+
+    font-size: 7px;
+}
+
+.document-search button {
+    height: 34px;
+
+    padding: 0 16px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #4d9ca9;
+
+    color: white;
+
+    font-size: 6px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   DOCUMENT GRID
+========================= */
+
+.document-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 13px;
+}
+
+.document-card {
+    padding: 15px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8ed;
+
+    border-radius: 13px;
+
+    transition: .25s;
+}
+
+.document-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 14px 28px
+        rgba(58,80,91,.08);
+}
+
+.document-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.document-icon {
+    width: 42px;
+    height: 48px;
+
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 7px;
+    font-weight: 800;
+}
+
+.document-icon.pdf {
+    background: #fff0ee;
+    color: #c36f64;
+}
+
+.document-icon.word {
+    background: #edf1fb;
+    color: #6d81b8;
+}
+
+.document-icon.excel {
+    background: #e9f6ed;
+    color: #619c75;
+}
+
+.document-icon.other {
+    background: #f2eef8;
+    color: #8b70ae;
+}
+
+.extension {
+    padding: 5px 7px;
+
+    background: #f5f7f9;
+
+    color: #9ba2a9;
+
+    border-radius: 5px;
+
+    font-size: 5px;
+
+    font-weight: 700;
+}
+
+.document-card h3 {
+    margin-top: 13px;
+
+    color: #515c65;
+
+    font-size: 7px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+.document-meta {
+    margin-top: 6px;
+
+    color: #a2a9af;
+
+    font-size: 5.5px;
+}
+
+.document-actions {
+    margin-top: 13px;
+
+    display: flex;
+
+    gap: 5px;
+}
+
+.open-btn {
+    flex: 1;
+
+    padding: 8px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    background: #e9f5f7;
+
+    color: #4a96a3;
+
+    font-size: 5.5px;
+
+    font-weight: 700;
+}
+
+.download-btn,
+.delete-btn {
+    width: 30px;
+
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-size: 12px;
+}
+
+.download-btn {
+    background: #edf3f9;
+    color: #6988a4;
+}
+
+.delete-btn {
+    background: #fff0f0;
+    color: #c36f73;
+}
+
+
+/* =========================
+   EMPTY
+========================= */
+
+.empty {
+    padding: 45px;
+
+    background: #ffffff;
+
+    border: 1px dashed #d5dfe5;
+
+    border-radius: 14px;
+
+    text-align: center;
+}
+
+.empty-icon {
+    width: 50px;
+    height: 50px;
+
+    margin: auto;
+
+    border-radius: 14px;
+
+    background: #e9f5f7;
+
+    color: #65a5b0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+}
+
+.empty h3 {
+    margin-top: 12px;
+
+    font-size: 9px;
+
+    color: #616c75;
+}
+
+.empty p {
+    margin-top: 5px;
+
+    color: #a1a9af;
+
+    font-size: 6px;
+}
+
+
+/* =========================
+   UPLOAD
+========================= */
+
+.upload-section {
+    margin-top: 30px;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #e8f6f8,
+            #f1fafb
+        );
+
+    border: 1px solid #d8eaee;
+
+    text-align: center;
+}
+
+.upload-icon {
+    width: 43px;
+    height: 43px;
+
+    margin: auto;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    color: #4c9ca9;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+}
+
+.upload-content > span {
+    display: block;
+
+    margin-top: 10px;
+
+    color: #5797a1;
+
+    font-size: 5px;
+
+    letter-spacing: .9px;
+
+    font-weight: 700;
+}
+
+.upload-content h2 {
+    margin-top: 5px;
+
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+
+    font-weight: 500;
+
+    color: #485860;
+}
+
+.upload-content p {
+    margin-top: 6px;
+
+    color: #7e8d95;
+
+    font-size: 6px;
+}
+
+.upload-form {
+    width: 650px;
+
+    max-width: 100%;
+
+    margin: 17px auto 0;
+
+    padding: 5px;
+
+    background: #ffffff;
+
+    border: 1px solid #d9e7eb;
+
+    border-radius: 9px;
+
+    display: flex;
+
+    gap: 7px;
+}
+
+.upload-form input {
+    flex: 1;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    padding: 7px;
+
+    font-size: 6px;
+
+    color: #7a858c;
+}
+
+.upload-form button {
+    padding: 0 16px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #4d9ca9;
+
+    color: white;
+
+    font-size: 6px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.upload-content small {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #9aa6ac;
+
+    font-size: 5px;
+}
+
+
+/* =========================
+   STORAGE
+========================= */
+
+.storage-section {
+    margin-top: 32px;
+}
+
+.storage-heading {
+    margin-bottom: 15px;
+}
+
+.folder-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+}
+
+.folder-card {
+    padding: 13px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e7ec;
+
+    border-radius: 11px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.folder-icon {
+    width: 39px;
+    height: 39px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 7px;
+
+    font-weight: 800;
+}
+
+.pdf-folder {
+    background: #fff0ee;
+    color: #c36f64;
+}
+
+.word-folder {
+    background: #edf1fb;
+    color: #6d81b8;
+}
+
+.excel-folder {
+    background: #e9f6ed;
+    color: #619c75;
+}
+
+.other-folder {
+    background: #f2eef8;
+    color: #8b70ae;
+}
+
+.folder-card h3 {
+    font-size: 6.5px;
+
+    color: #5a656e;
+}
+
+.folder-card p {
+    margin-top: 3px;
+
+    color: #a2a9af;
+
+    font-size: 5px;
+}
+
+.folder-card strong {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #58929d;
+
+    font-size: 5px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    min-height: 52px;
+
+    padding: 0 8%;
+
+    background: #ffffff;
+
+    border-top: 1px solid #e3e8ec;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    color: #a2a9ae;
+
+    font-size: 5px;
+
+    letter-spacing: .6px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 950px) {
+
+    .hero {
+        padding: 40px 7%;
+    }
+
+    .cloud-illustration {
+        display: none;
+    }
+
+    .stats {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .document-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .folder-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    .cloud-status {
+        display: none;
+    }
+
+    .hero h2 {
+        font-size: 31px;
+    }
+
+    main,
+    .stats {
+        width: 90%;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .library-header {
+        display: block;
+    }
+
+    .filters {
+        margin-top: 12px;
+    }
+
+    .document-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .folder-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .upload-form {
+        display: block;
+    }
+
+    .upload-form input {
+        width: 100%;
+        margin-bottom: 7px;
+    }
+
+    .upload-form button {
+        width: 100%;
+        height: 35px;
+    }
+
+    footer {
+        padding: 12px 5%;
+
+        display: block;
+    }
+
+    footer span {
+        display: block;
+
+        margin-bottom: 5px;
+    }
+}
