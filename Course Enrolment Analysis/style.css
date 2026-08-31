@@ -1,0 +1,465 @@
+/* =========================================================
+   COURSE ENROLMENT ANALYSIS
+   INPUT PAGE
+   ========================================================= */
+
+
+/* -------------------- RESET -------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* -------------------- BODY -------------------- */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7f6;
+    color: #30413b;
+    min-height: 100vh;
+}
+
+
+/* -------------------- MAIN CONTAINER -------------------- */
+
+.container {
+    width: 100%;
+    padding: 35px 5% 30px;
+}
+
+
+/* -------------------- HEADER -------------------- */
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 32px;
+}
+
+
+.logo {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e6f2ed;
+    border-radius: 14px;
+
+    font-size: 23px;
+}
+
+
+header h1 {
+    font-size: 28px;
+    color: #293c35;
+    margin-bottom: 5px;
+}
+
+
+header p {
+    font-size: 10px;
+    color: #899690;
+}
+
+
+/* -------------------- INTRO -------------------- */
+
+.intro {
+    margin-bottom: 20px;
+}
+
+
+.intro span {
+    display: block;
+
+    font-size: 8px;
+    font-weight: bold;
+
+    letter-spacing: 1.7px;
+
+    color: #5d927d;
+
+    margin-bottom: 6px;
+}
+
+
+.intro h2 {
+    font-size: 20px;
+    color: #344740;
+
+    margin-bottom: 6px;
+}
+
+
+.intro p {
+    font-size: 10px;
+    color: #899690;
+}
+
+
+/* -------------------- COURSE CONTAINER -------------------- */
+
+.course-container {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+    width: 100%;
+
+    margin-bottom: 25px;
+}
+
+
+/* -------------------- COURSE CARD -------------------- */
+
+.course-card {
+    position: relative;
+
+    background: #ffffff;
+
+    border: 1px solid #dfe7e3;
+
+    border-radius: 14px;
+
+    padding: 23px 24px;
+
+    min-height: 220px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 7px 22px rgba(40, 65, 56, 0.05);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.course-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 28px rgba(40, 65, 56, 0.10);
+}
+
+
+/* -------------------- LEFT COLOR STRIP -------------------- */
+
+.course-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 5px;
+    height: 100%;
+}
+
+
+/* Blue */
+
+.course-card:nth-child(1)::before {
+    background: #5c94d6;
+}
+
+
+/* Purple */
+
+.course-card:nth-child(2)::before {
+    background: #8d72cc;
+}
+
+
+/* Orange */
+
+.course-card:nth-child(3)::before {
+    background: #e49a50;
+}
+
+
+/* Green */
+
+.course-card:nth-child(4)::before {
+    background: #5ba17d;
+}
+
+
+/* -------------------- COURSE TOP -------------------- */
+
+.course-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 16px;
+}
+
+
+/* -------------------- COURSE NUMBER -------------------- */
+
+.course-number {
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.2px;
+
+    color: #9aa49f;
+}
+
+
+/* -------------------- COURSE ICON -------------------- */
+
+.course-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    font-size: 19px;
+}
+
+
+/* Different icon backgrounds */
+
+.course-card:nth-child(1) .course-icon {
+    background: #eaf2fb;
+}
+
+
+.course-card:nth-child(2) .course-icon {
+    background: #f0ebfa;
+}
+
+
+.course-card:nth-child(3) .course-icon {
+    background: #fff0df;
+}
+
+
+.course-card:nth-child(4) .course-icon {
+    background: #e8f4ee;
+}
+
+
+/* -------------------- COURSE TITLE -------------------- */
+
+.course-card h3 {
+    font-size: 16px;
+
+    color: #354740;
+
+    margin-bottom: 6px;
+}
+
+
+/* -------------------- COURSE DESCRIPTION -------------------- */
+
+.course-card p {
+    font-size: 9px;
+
+    color: #98a39e;
+
+    margin-bottom: 20px;
+}
+
+
+/* -------------------- LABEL -------------------- */
+
+.course-card label {
+    display: block;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+    letter-spacing: .7px;
+
+    color: #77857f;
+
+    margin-bottom: 7px;
+}
+
+
+/* -------------------- INPUT -------------------- */
+
+.course-card input {
+    width: 100%;
+
+    height: 40px;
+
+    padding: 0 12px;
+
+    border: 1px solid #dce5e1;
+
+    border-radius: 7px;
+
+    background: #fafcfb;
+
+    color: #354740;
+
+    font-size: 11px;
+
+    outline: none;
+
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease;
+}
+
+
+.course-card input::placeholder {
+    color: #b0b8b4;
+}
+
+
+.course-card input:focus {
+    border-color: #6fa18e;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px rgba(111, 161, 142, .12);
+}
+
+
+/* Remove number input arrows */
+
+.course-card input::-webkit-outer-spin-button,
+.course-card input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.course-card input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+/* -------------------- BUTTON AREA -------------------- */
+
+.button-area {
+    text-align: center;
+
+    margin-top: 5px;
+}
+
+
+.button-area button {
+    border: none;
+
+    background: #3d7763;
+
+    color: #ffffff;
+
+    padding: 13px 28px;
+
+    border-radius: 8px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background .2s ease,
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+
+.button-area button:hover {
+    background: #2f624f;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 16px rgba(61, 119, 99, .20);
+}
+
+
+.button-area p {
+    margin-top: 10px;
+
+    font-size: 8px;
+
+    color: #a0aaa6;
+}
+
+
+/* -------------------- FOOTER -------------------- */
+
+footer {
+    text-align: center;
+
+    font-size: 8px;
+
+    color: #9aa5a0;
+
+    margin-top: 24px;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .course-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 25px 4%;
+    }
+
+
+    header {
+        align-items: flex-start;
+    }
+
+
+    header h1 {
+        font-size: 23px;
+    }
+
+
+    .course-card {
+        min-height: auto;
+
+        padding: 20px;
+    }
+
+
+    .intro h2 {
+        font-size: 18px;
+    }
+
+}
