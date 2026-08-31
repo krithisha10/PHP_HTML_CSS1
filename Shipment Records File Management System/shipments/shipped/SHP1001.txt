@@ -1,0 +1,11 @@
+========================================
+        CARGOTRACK SHIPMENT RECORD
+========================================
+Shipment ID   : SHP1001
+Customer Name : Arun Kumar
+Destination   : Chennai
+Shipment Type : Electronics
+Status        : Shipped
+Date          : 31 Aug 2026
+Time          : 10:00 AM
+========================================
