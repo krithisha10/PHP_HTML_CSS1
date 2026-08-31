@@ -1,0 +1,1229 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background: #f8f3ed;
+
+    color: #292b35;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   MAIN PAGE
+========================================= */
+
+.page {
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    height: 76px;
+
+    padding: 0 7%;
+
+    background: #fffdf9;
+
+    border-bottom: 1px solid #e8dfd7;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* BRAND */
+
+.brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+.brand-icon {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 10px;
+
+    background: #df806c;
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+}
+
+.brand-text strong {
+    display: block;
+
+    font-size: 14px;
+
+    color: #30313a;
+}
+
+.brand-text span {
+    display: block;
+
+    margin-top: 3px;
+
+    font-size: 6px;
+
+    color: #aaa19b;
+
+    letter-spacing: 1.6px;
+}
+
+
+/* DATE */
+
+.date-display {
+    text-align: right;
+}
+
+.date-display small {
+    display: block;
+
+    color: #aaa09a;
+
+    font-size: 6px;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 4px;
+}
+
+.date-display strong {
+    font-size: 10px;
+
+    color: #575159;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.main-container {
+    width: 86%;
+
+    max-width: 1120px;
+
+    flex: 1;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 390px;
+
+    gap: 80px;
+
+    align-items: center;
+
+    padding: 55px 0;
+}
+
+
+/* =========================================
+   INTRO SECTION
+========================================= */
+
+.intro-section {
+    padding: 20px 0;
+}
+
+
+/* TAG */
+
+.tag {
+    display: inline-block;
+
+    padding: 8px 13px;
+
+    background: #f8e5df;
+
+    color: #c9705d;
+
+    border-radius: 20px;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+
+    margin-bottom: 22px;
+}
+
+
+/* MAIN HEADING */
+
+.intro-section h1 {
+    max-width: 590px;
+
+    font-size: 51px;
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+    color: #292c36;
+}
+
+.intro-section h1 span {
+    display: block;
+
+    color: #d47764;
+}
+
+
+/* DESCRIPTION */
+
+.intro-section > p {
+    max-width: 480px;
+
+    margin-top: 20px;
+
+    color: #89827d;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   TODAY CARD
+========================================= */
+
+.today-card {
+    width: 510px;
+
+    margin-top: 32px;
+
+    padding: 16px;
+
+    background: #fffdf9;
+
+    border: 1px solid #e6ddd5;
+
+    border-radius: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    transition: 0.3s;
+}
+
+.today-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px
+        rgba(75, 55, 40, 0.07);
+}
+
+
+/* CALENDAR */
+
+.calendar {
+    width: 50px;
+    height: 57px;
+
+    flex-shrink: 0;
+
+    border-radius: 9px;
+
+    overflow: hidden;
+
+    background: #29313d;
+
+    color: white;
+
+    text-align: center;
+}
+
+.calendar .month {
+    padding: 5px 0;
+
+    background: #d97964;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+.calendar .day {
+    font-size: 20px;
+
+    font-weight: 700;
+
+    line-height: 23px;
+
+    margin-top: 2px;
+}
+
+.calendar .year {
+    font-size: 6px;
+
+    color: #cbd0d5;
+}
+
+
+/* TODAY INFORMATION */
+
+.today-info span {
+    display: block;
+
+    color: #a69d97;
+
+    font-size: 6px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+
+    margin-bottom: 5px;
+}
+
+.today-info strong {
+    display: block;
+
+    font-family: Consolas, monospace;
+
+    font-size: 9px;
+
+    color: #504b52;
+}
+
+.today-info small {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #aaa19b;
+
+    font-size: 7px;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.features {
+    width: 510px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+
+    margin-top: 28px;
+}
+
+.feature {
+    padding-right: 16px;
+
+    border-right: 1px solid #ddd4cc;
+}
+
+.feature:last-child {
+    border-right: none;
+}
+
+.feature-number {
+    color: #d47863;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    margin-bottom: 6px;
+}
+
+.feature strong {
+    display: block;
+
+    font-size: 9px;
+
+    color: #4b464c;
+
+    margin-bottom: 4px;
+}
+
+.feature span {
+    color: #9e9690;
+
+    font-size: 7px;
+}
+
+
+/* =========================================
+   LOG CARD
+========================================= */
+
+.log-card {
+    background: #fffdf9;
+
+    border: 1px solid #e5dcd4;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 20px 50px
+        rgba(74, 55, 42, 0.08);
+
+    transition: 0.3s;
+}
+
+.log-card:hover {
+    box-shadow:
+        0 24px 55px
+        rgba(74, 55, 42, 0.11);
+}
+
+
+/* CARD HEADING */
+
+.card-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 23px;
+}
+
+.pen-icon {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 10px;
+
+    background: #fae7e2;
+
+    color: #d27662;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 19px;
+}
+
+.card-heading span {
+    display: block;
+
+    color: #a69c96;
+
+    font-size: 6px;
+
+    letter-spacing: 1.5px;
+
+    font-weight: 600;
+}
+
+.card-heading h2 {
+    font-size: 19px;
+
+    color: #34323a;
+
+    margin-top: 3px;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.log-card label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #5d565b;
+
+    font-size: 8px;
+
+    font-weight: 600;
+}
+
+
+/* INPUTS */
+
+.log-card input,
+.log-card textarea,
+.log-card select {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #dfd6ce;
+
+    border-radius: 8px;
+
+    background: #fcfaf7;
+
+    color: #504a50;
+
+    font-family: inherit;
+
+    font-size: 9px;
+
+    outline: none;
+
+    transition: 0.25s;
+}
+
+
+/* PLACEHOLDER */
+
+.log-card input::placeholder,
+.log-card textarea::placeholder {
+    color: #b6aea8;
+}
+
+
+/* TEXTAREA */
+
+.log-card textarea {
+    min-height: 82px;
+
+    resize: vertical;
+
+    line-height: 1.5;
+}
+
+
+/* FOCUS */
+
+.log-card input:focus,
+.log-card textarea:focus,
+.log-card select:focus {
+    border-color: #d97964;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(217, 121, 100, 0.09);
+}
+
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.log-card button {
+    width: 100%;
+
+    border: none;
+
+    border-radius: 9px;
+
+    padding: 13px;
+
+    background: #d97964;
+
+    color: #ffffff;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    margin-top: 2px;
+
+    transition: all 0.3s ease;
+}
+
+.log-card button span {
+    margin-left: 8px;
+
+    font-size: 11px;
+}
+
+.log-card button:hover {
+    background: #c96955;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px
+        rgba(201, 105, 85, 0.22);
+}
+
+.log-card button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   AUTOMATIC NOTE
+========================================= */
+
+.automatic-note {
+    margin-top: 14px;
+
+    padding-top: 12px;
+
+    border-top: 1px solid #eee7e1;
+
+    color: #a49b95;
+
+    text-align: center;
+
+    font-size: 7px;
+}
+
+.automatic-note span {
+    color: #77a183;
+
+    margin-right: 5px;
+
+    font-size: 8px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    padding: 17px;
+
+    background: #fffdf9;
+
+    border-top: 1px solid #e7ded6;
+
+    color: #aaa19b;
+
+    text-align: center;
+
+    font-size: 7px;
+}
+
+footer span {
+    color: #d47763;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   RESULT PAGE
+========================================= */
+
+.result-page {
+    min-height: 100vh;
+
+    background: #f8f3ed;
+}
+
+
+/* =========================================
+   RESULT HEADER
+========================================= */
+
+.result-top {
+    height: 76px;
+
+    padding: 0 7%;
+
+    background: #fffdf9;
+
+    border-bottom: 1px solid #e7ded6;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.result-top > a {
+    text-decoration: none;
+
+    background: #fae7e2;
+
+    color: #c96d59;
+
+    padding: 9px 14px;
+
+    border-radius: 8px;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    transition: 0.25s;
+}
+
+.result-top > a:hover {
+    background: #f5d9d2;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   RESULT MAIN
+========================================= */
+
+.result-main {
+    width: 86%;
+
+    max-width: 1050px;
+
+    margin: auto;
+
+    padding: 45px 0;
+}
+
+
+/* =========================================
+   SUCCESS SECTION
+========================================= */
+
+.success-section {
+    max-width: 620px;
+
+    text-align: center;
+
+    margin: auto;
+}
+
+.success-icon {
+    width: 54px;
+    height: 54px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background: #e4f0e7;
+
+    color: #679274;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 21px;
+
+    font-weight: 700;
+}
+
+.success-section > span {
+    display: block;
+
+    margin-top: 14px;
+
+    color: #6f947b;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.8px;
+}
+
+.success-section h1 {
+    margin: 8px 0;
+
+    font-size: 31px;
+
+    color: #303039;
+}
+
+.success-section h1 strong {
+    color: #d47763;
+}
+
+.success-section p {
+    color: #99908a;
+
+    font-size: 9px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   FILE BANNER
+========================================= */
+
+.file-banner {
+    margin-top: 29px;
+
+    padding: 17px 20px;
+
+    background: #29313d;
+
+    color: white;
+
+    border-radius: 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+}
+
+.file-symbol {
+    padding: 8px;
+
+    background: #424b57;
+
+    color: #e9bfb5;
+
+    border-radius: 6px;
+
+    font-size: 7px;
+
+    font-weight: 700;
+}
+
+.file-banner small {
+    display: block;
+
+    color: #aeb4bb;
+
+    font-size: 6px;
+
+    letter-spacing: 1.2px;
+
+    margin-bottom: 4px;
+}
+
+.file-banner strong {
+    font-family: Consolas, monospace;
+
+    font-size: 9px;
+}
+
+.file-date {
+    margin-left: auto;
+
+    text-align: right;
+}
+
+
+/* =========================================
+   RESULT GRID
+========================================= */
+
+.result-grid {
+    display: grid;
+
+    grid-template-columns: 310px 1fr;
+
+    gap: 15px;
+
+    margin-top: 15px;
+}
+
+
+/* =========================================
+   DETAILS CARD
+========================================= */
+
+.details-card {
+    padding: 23px;
+
+    background: #fffdf9;
+
+    border: 1px solid #e6ddd5;
+
+    border-radius: 15px;
+}
+
+.section-label {
+    color: #a59b95;
+
+    font-size: 7px;
+
+    letter-spacing: 1.5px;
+}
+
+.details-card h2 {
+    margin: 9px 0 21px;
+
+    color: #37343b;
+
+    font-size: 17px;
+
+    line-height: 1.3;
+}
+
+.detail {
+    padding: 12px 0;
+
+    border-top: 1px solid #eee7e1;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.detail span {
+    color: #aaa09a;
+
+    font-size: 7px;
+}
+
+.detail strong {
+    color: #575157;
+
+    font-size: 8px;
+
+    text-align: right;
+}
+
+.detail .status {
+    padding: 5px 7px;
+
+    background: #fae7e2;
+
+    color: #c66c58;
+
+    border-radius: 6px;
+
+    font-size: 7px;
+}
+
+
+/* =========================================
+   PREVIEW CARD
+========================================= */
+
+.preview-card {
+    background: #202832;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+.preview-header {
+    padding: 15px 18px;
+
+    border-bottom: 1px solid #37404a;
+
+    color: #c5c9cd;
+
+    font-size: 7px;
+
+    letter-spacing: 1.3px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.preview-header .live {
+    color: #83af8d;
+
+    letter-spacing: 0.5px;
+}
+
+.preview-card pre {
+    padding: 20px;
+
+    max-height: 330px;
+
+    overflow-y: auto;
+
+    color: #d6d2cc;
+
+    font-family: Consolas, monospace;
+
+    font-size: 8px;
+
+    line-height: 1.8;
+
+    white-space: pre-wrap;
+}
+
+
+/* =========================================
+   BOTTOM ACTION
+========================================= */
+
+.bottom {
+    margin-top: 18px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.bottom > div {
+    color: #89817b;
+
+    font-size: 8px;
+}
+
+.green-dot {
+    display: inline-block;
+
+    width: 6px;
+    height: 6px;
+
+    background: #78a485;
+
+    border-radius: 50%;
+
+    margin-right: 5px;
+}
+
+.bottom a {
+    padding: 10px 14px;
+
+    background: #d97964;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    transition: 0.25s;
+}
+
+.bottom a:hover {
+    background: #c96955;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 950px) {
+
+    .main-container {
+        grid-template-columns: 1fr;
+
+        max-width: 620px;
+
+        gap: 35px;
+    }
+
+    .intro-section {
+        text-align: center;
+    }
+
+    .intro-section > p {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+    .today-card,
+    .features {
+        width: 100%;
+
+        text-align: left;
+    }
+
+    .log-card {
+        width: 100%;
+    }
+
+    .result-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 700px) {
+
+    .header,
+    .result-top {
+        padding: 0 5%;
+    }
+
+    .main-container,
+    .result-main {
+        width: 90%;
+    }
+
+    .intro-section h1 {
+        font-size: 42px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .feature {
+        border-right: none;
+
+        border-bottom: 1px solid #ddd4cc;
+
+        padding-bottom: 10px;
+    }
+
+    .feature:last-child {
+        border-bottom: none;
+    }
+
+    .file-banner {
+        flex-wrap: wrap;
+    }
+
+    .file-date {
+        width: 100%;
+
+        margin-left: 0;
+
+        text-align: left;
+
+        padding-top: 8px;
+
+        border-top: 1px solid #3b444e;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .header {
+        height: 68px;
+    }
+
+    .brand-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .brand-text strong {
+        font-size: 12px;
+    }
+
+    .date-display {
+        display: none;
+    }
+
+    .main-container {
+        padding: 35px 0;
+    }
+
+    .intro-section h1 {
+        font-size: 35px;
+
+        letter-spacing: -1px;
+    }
+
+    .intro-section > p {
+        font-size: 9px;
+    }
+
+    .today-card {
+        padding: 13px;
+    }
+
+    .today-info strong {
+        font-size: 7px;
+    }
+
+    .log-card {
+        padding: 22px;
+    }
+
+    .result-header h1 {
+        font-size: 25px;
+    }
+
+    .bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+}
