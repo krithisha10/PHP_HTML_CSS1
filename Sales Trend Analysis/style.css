@@ -1,0 +1,627 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f5f7f9;
+
+    color: #39414a;
+
+    min-height: 100vh;
+
+}
+
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/* ==============================
+   HEADER
+   ============================== */
+
+.header {
+
+    height: 80px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e2e6ea;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 7%;
+}
+
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+}
+
+
+.brand-icon {
+
+    width: 43px;
+
+    height: 43px;
+
+    border-radius: 12px;
+
+    background: #e7f6ee;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 20px;
+}
+
+
+.mini-title {
+
+    display: block;
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    color: #4f9a70;
+
+    margin-bottom: 4px;
+}
+
+
+.brand h1 {
+
+    font-size: 18px;
+
+    color: #353c44;
+}
+
+
+.header-tag {
+
+    padding: 8px 13px;
+
+    background: #f0f3f5;
+
+    border-radius: 20px;
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    color: #747d85;
+
+    letter-spacing: .5px;
+}
+
+
+/* ==============================
+   HERO
+   ============================== */
+
+.hero {
+
+    width: 86%;
+
+    max-width: 1080px;
+
+    margin: 26px auto 20px;
+
+    min-height: 150px;
+
+    padding: 28px 32px;
+
+    border-radius: 17px;
+
+    background: #f0faf5;
+
+    border: 1px solid #d9eee1;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.hero-label {
+
+    display: block;
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.6px;
+
+    color: #4e9870;
+
+    margin-bottom: 7px;
+}
+
+
+.hero h2 {
+
+    font-size: 25px;
+
+    color: #39414a;
+
+    margin-bottom: 7px;
+}
+
+
+.hero p {
+
+    max-width: 550px;
+
+    font-size: 9px;
+
+    line-height: 1.6;
+
+    color: #8e979f;
+}
+
+
+.hero-icon {
+
+    width: 72px;
+
+    height: 72px;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #dceee3;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 30px;
+
+    box-shadow: 0 7px 20px rgba(50,90,70,.05);
+}
+
+
+/* ==============================
+   SALES GRID
+   ============================== */
+
+.sales-grid {
+
+    width: 86%;
+
+    max-width: 1080px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 14px;
+}
+
+
+/* ==============================
+   SALES CARD
+   ============================== */
+
+.sales-card {
+
+    position: relative;
+
+    background: #ffffff;
+
+    border-radius: 14px;
+
+    padding: 19px;
+
+    border: 1px solid #e0e4e8;
+
+    overflow: hidden;
+
+    transition: .2s ease;
+}
+
+
+.sales-card:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(50,60,70,.07);
+}
+
+
+.sales-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 4px;
+}
+
+
+.card-one::before {
+    background: #e5a15a;
+}
+
+
+.card-two::before {
+    background: #759aca;
+}
+
+
+.card-three::before {
+    background: #79aa8a;
+}
+
+
+.card-four::before {
+    background: #a085bd;
+}
+
+
+.card-five::before {
+    background: #d58da7;
+}
+
+
+.card-six::before {
+    background: #62aaa7;
+}
+
+
+/* ==============================
+   CARD HEADER
+   ============================== */
+
+.card-head {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 16px;
+}
+
+
+.month-number {
+
+    width: 31px;
+
+    height: 31px;
+
+    border-radius: 8px;
+
+    background: #f1f3f5;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+    color: #808890;
+}
+
+
+.month-icon {
+
+    font-size: 18px;
+}
+
+
+.sales-card h3 {
+
+    font-size: 15px;
+
+    color: #454d56;
+
+    margin-bottom: 5px;
+}
+
+
+.sales-card p {
+
+    font-size: 8px;
+
+    color: #a0a7ae;
+
+    margin-bottom: 16px;
+}
+
+
+.sales-card label {
+
+    display: block;
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    color: #737c85;
+
+    margin-bottom: 6px;
+
+    letter-spacing: .3px;
+}
+
+
+/* ==============================
+   INPUT
+   ============================== */
+
+.input-box {
+
+    height: 39px;
+
+    display: flex;
+
+    align-items: center;
+
+    background: #fafbfc;
+
+    border: 1px solid #dfe4e8;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+
+.input-box span {
+
+    width: 34px;
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #f1f3f5;
+
+    color: #7f8790;
+
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+
+.input-box input {
+
+    flex: 1;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    padding: 0 9px;
+
+    font-size: 9px;
+
+    color: #4c555e;
+}
+
+
+.input-box input::placeholder {
+
+    color: #b1b7bd;
+}
+
+
+.input-box:focus-within {
+
+    border-color: #9bbbaa;
+
+    background: #ffffff;
+}
+
+
+/* ==============================
+   BUTTON
+   ============================== */
+
+.button-area {
+
+    width: 86%;
+
+    max-width: 1080px;
+
+    margin: 21px auto 25px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #dfe3e7;
+
+    text-align: center;
+}
+
+
+.button-area button {
+
+    border: none;
+
+    background: #424a53;
+
+    color: #ffffff;
+
+    border-radius: 9px;
+
+    padding: 13px 24px;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .2s ease;
+}
+
+
+.button-area button:hover {
+
+    background: #2d343c;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 17px rgba(45,52,60,.15);
+}
+
+
+.button-area button span {
+
+    margin-left: 8px;
+
+    font-size: 13px;
+}
+
+
+.button-area p {
+
+    margin-top: 9px;
+
+    font-size: 7px;
+
+    color: #9ba2aa;
+}
+
+
+/* ==============================
+   FOOTER
+   ============================== */
+
+footer {
+
+    width: 86%;
+
+    max-width: 1080px;
+
+    margin: auto;
+
+    padding: 17px 0 25px;
+
+    border-top: 1px solid #dfe2e7;
+
+    text-align: center;
+
+    color: #9ba2aa;
+
+    font-size: 8px;
+}
+
+
+/* ==============================
+   RESPONSIVE
+   ============================== */
+
+@media (max-width: 850px) {
+
+    .sales-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+
+        padding: 0 5%;
+    }
+
+    .header-tag {
+
+        display: none;
+    }
+
+    .hero {
+
+        width: 90%;
+
+        padding: 23px;
+    }
+
+    .hero h2 {
+
+        font-size: 21px;
+    }
+
+    .hero-icon {
+
+        width: 60px;
+
+        height: 60px;
+
+        font-size: 25px;
+    }
+
+    .sales-grid {
+
+        width: 90%;
+
+        grid-template-columns: 1fr;
+    }
+
+    .button-area,
+    footer {
+
+        width: 90%;
+    }
+
+}
