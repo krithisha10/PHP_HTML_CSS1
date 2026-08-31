@@ -1,0 +1,899 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+   ========================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f6f3;
+    color: #39343a;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   PAGE
+   ========================================= */
+
+.page {
+    width: 100%;
+    padding: 28px 6% 22px;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+
+.brand-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #f5d9d0;
+    color: #a85e52;
+
+    font-size: 22px;
+
+    box-shadow: 0 6px 15px rgba(100, 70, 60, 0.08);
+}
+
+
+.mini-title {
+    display: block;
+
+    font-size: 8px;
+    letter-spacing: 1.8px;
+    font-weight: bold;
+
+    color: #a36b61;
+
+    margin-bottom: 5px;
+}
+
+
+.header h1 {
+    font-size: 24px;
+    color: #39343a;
+}
+
+
+.secure-badge {
+    padding: 9px 13px;
+
+    background: #ffffff;
+
+    border: 1px solid #e8dfda;
+
+    border-radius: 8px;
+
+    color: #8a726b;
+
+    font-size: 8px;
+    font-weight: bold;
+
+    letter-spacing: .7px;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+   ========================================= */
+
+.main-container {
+    display: grid;
+
+    grid-template-columns: 0.85fr 1.15fr;
+
+    gap: 18px;
+
+    margin-bottom: 23px;
+}
+
+
+/* =========================================
+   WELCOME PANEL
+   ========================================= */
+
+.welcome-panel {
+    position: relative;
+
+    min-height: 505px;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    background: #eee3f2;
+
+    padding: 36px;
+}
+
+
+.welcome-panel::before {
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, .32);
+
+    right: -90px;
+    top: -80px;
+}
+
+
+.welcome-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+.section-label {
+    display: block;
+
+    font-size: 8px;
+
+    letter-spacing: 1.8px;
+
+    font-weight: bold;
+
+    color: #876795;
+
+    margin-bottom: 10px;
+}
+
+
+.welcome-content h2 {
+    font-size: 31px;
+
+    line-height: 1.15;
+
+    color: #403748;
+
+    max-width: 380px;
+
+    margin-bottom: 13px;
+}
+
+
+.welcome-content > p {
+    max-width: 390px;
+
+    font-size: 10px;
+
+    line-height: 1.7;
+
+    color: #756b7b;
+}
+
+
+/* =========================================
+   BENEFITS
+   ========================================= */
+
+.benefits {
+    margin-top: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.benefit {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+
+.benefit-icon {
+    width: 31px;
+    height: 31px;
+
+    min-width: 31px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #806290;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+
+.benefit strong {
+    display: block;
+
+    font-size: 9px;
+
+    color: #4b414f;
+
+    margin-bottom: 3px;
+}
+
+
+.benefit span {
+    display: block;
+
+    font-size: 8px;
+
+    color: #817583;
+}
+
+
+/* =========================================
+   SHOPPING ART
+   ========================================= */
+
+.shopping-art {
+    position: absolute;
+
+    right: 30px;
+    bottom: 25px;
+
+    width: 150px;
+    height: 125px;
+}
+
+
+.circle {
+    position: absolute;
+
+    border-radius: 50%;
+}
+
+
+.circle-one {
+    width: 105px;
+    height: 105px;
+
+    right: 10px;
+    bottom: 0;
+
+    background: #f4d7c8;
+
+    opacity: .8;
+}
+
+
+.circle-two {
+    width: 55px;
+    height: 55px;
+
+    right: 80px;
+    bottom: 58px;
+
+    background: #d9c9e6;
+
+    opacity: .9;
+}
+
+
+.cart {
+    position: absolute;
+
+    right: 38px;
+    bottom: 20px;
+
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 19px;
+
+    background: #ffffff;
+
+    font-size: 31px;
+
+    box-shadow: 0 10px 25px rgba(100, 70, 80, .12);
+}
+
+
+/* =========================================
+   REGISTRATION PANEL
+   ========================================= */
+
+.registration-panel {
+    background: #ffffff;
+
+    border: 1px solid #e8e1dc;
+
+    border-radius: 18px;
+
+    padding: 29px 32px;
+
+    box-shadow: 0 7px 22px rgba(70, 60, 55, .045);
+}
+
+
+.form-heading {
+    margin-bottom: 20px;
+}
+
+
+.form-heading > span {
+    display: block;
+
+    font-size: 8px;
+
+    letter-spacing: 1.7px;
+
+    font-weight: bold;
+
+    color: #a36b61;
+
+    margin-bottom: 5px;
+}
+
+
+.form-heading h2 {
+    font-size: 21px;
+
+    color: #403b40;
+
+    margin-bottom: 5px;
+}
+
+
+.form-heading p {
+    font-size: 9px;
+
+    color: #9b9290;
+}
+
+
+/* =========================================
+   INPUT GROUP
+   ========================================= */
+
+.input-group {
+    margin-bottom: 12px;
+}
+
+
+.input-group label {
+    display: block;
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    letter-spacing: .9px;
+
+    color: #766e6d;
+
+    margin-bottom: 6px;
+}
+
+
+.input-box {
+    width: 100%;
+    height: 39px;
+
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #e5dfdc;
+
+    border-radius: 8px;
+
+    background: #fcfbfa;
+
+    transition: .2s ease;
+}
+
+
+.input-box:focus-within {
+    border-color: #b9867c;
+
+    background: #ffffff;
+
+    box-shadow: 0 0 0 3px rgba(185, 134, 124, .09);
+}
+
+
+.input-icon {
+    width: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 13px;
+
+    color: #9b7770;
+}
+
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    padding-right: 10px;
+
+    color: #403c3d;
+
+    font-size: 9px;
+}
+
+
+.input-box input::placeholder {
+    color: #b5aeab;
+}
+
+
+/* =========================================
+   VALIDATION NOTE
+   ========================================= */
+
+.validation-note {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 16px;
+
+    padding: 11px 13px;
+
+    border-radius: 9px;
+
+    background: #f8f0e9;
+
+    border: 1px solid #eee1d7;
+}
+
+
+.note-icon {
+    width: 28px;
+    height: 28px;
+
+    min-width: 28px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #a2705e;
+
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+
+.validation-note strong {
+    display: block;
+
+    font-size: 8px;
+
+    color: #65534d;
+
+    margin-bottom: 3px;
+}
+
+
+.validation-note p {
+    font-size: 7px;
+
+    line-height: 1.4;
+
+    color: #91827b;
+}
+
+
+/* =========================================
+   REGISTER BUTTON
+   ========================================= */
+
+.register-button {
+    width: 100%;
+
+    height: 43px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    margin-top: 15px;
+
+    background: #a5685d;
+
+    color: #ffffff;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .2s ease;
+}
+
+
+.register-button span {
+    margin-left: 7px;
+
+    font-size: 13px;
+}
+
+
+.register-button:hover {
+    background: #8e574e;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 18px rgba(140, 80, 70, .16);
+}
+
+
+.form-footer {
+    text-align: center;
+
+    margin-top: 10px;
+
+    font-size: 7px;
+
+    color: #aaa19e;
+}
+
+
+/* =========================================
+   RULES SECTION
+   ========================================= */
+
+.rules-section {
+    background: #ffffff;
+
+    border: 1px solid #e8e1dc;
+
+    border-radius: 15px;
+
+    padding: 20px 22px;
+
+    margin-bottom: 20px;
+}
+
+
+.rules-heading {
+    margin-bottom: 15px;
+}
+
+
+.rules-heading span {
+    display: block;
+
+    font-size: 7px;
+
+    letter-spacing: 1.6px;
+
+    font-weight: bold;
+
+    color: #a36b61;
+
+    margin-bottom: 5px;
+}
+
+
+.rules-heading h2 {
+    font-size: 18px;
+
+    color: #403b40;
+}
+
+
+/* =========================================
+   RULE CARDS
+   ========================================= */
+
+.rules-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 10px;
+}
+
+
+.rule-card {
+    position: relative;
+
+    padding: 15px;
+
+    min-height: 105px;
+
+    border-radius: 11px;
+
+    border: 1px solid #ebe5e1;
+
+    background: #fcfbfa;
+
+    overflow: hidden;
+
+    transition: .2s ease;
+}
+
+
+.rule-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 18px rgba(70, 60, 55, .06);
+}
+
+
+.rule-card:nth-child(1) {
+    border-top: 3px solid #8d70a0;
+}
+
+
+.rule-card:nth-child(2) {
+    border-top: 3px solid #d27d70;
+}
+
+
+.rule-card:nth-child(3) {
+    border-top: 3px solid #78a68b;
+}
+
+
+.rule-card:nth-child(4) {
+    border-top: 3px solid #7199bd;
+}
+
+
+.rule-card:nth-child(5) {
+    border-top: 3px solid #d2a15f;
+}
+
+
+.rule-number {
+    position: absolute;
+
+    right: 10px;
+    top: 9px;
+
+    font-size: 7px;
+
+    color: #b9b1ae;
+
+    font-weight: bold;
+}
+
+
+.rule-icon {
+    width: 31px;
+    height: 31px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: #eee5f2;
+
+    color: #806291;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    margin-bottom: 9px;
+}
+
+
+.rule-card:nth-child(2) .rule-icon {
+    background: #fae8e4;
+    color: #bd7065;
+}
+
+
+.rule-card:nth-child(3) .rule-icon {
+    background: #e6f2eb;
+    color: #5f9274;
+}
+
+
+.rule-card:nth-child(4) .rule-icon {
+    background: #e6eff7;
+    color: #5c82a3;
+}
+
+
+.rule-card:nth-child(5) .rule-icon {
+    background: #f8eedf;
+    color: #b3874d;
+}
+
+
+.rule-card h3 {
+    font-size: 9px;
+
+    color: #4b4547;
+
+    margin-bottom: 4px;
+}
+
+
+.rule-card p {
+    font-size: 7px;
+
+    color: #98908d;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    text-align: center;
+
+    border-top: 1px solid #e4deda;
+
+    padding-top: 12px;
+
+    font-size: 8px;
+
+    color: #a39b98;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .welcome-panel {
+        min-height: 390px;
+    }
+
+
+    .rules-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .page {
+        padding: 22px 5% 20px;
+    }
+
+
+    .secure-badge {
+        display: none;
+    }
+
+
+    .welcome-panel {
+        padding: 28px;
+    }
+
+
+    .welcome-content h2 {
+        font-size: 26px;
+    }
+
+
+    .shopping-art {
+        display: none;
+    }
+
+
+    .registration-panel {
+        padding: 25px;
+    }
+
+
+    .rules-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+
+    .brand-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+
+    .welcome-panel {
+        padding: 23px;
+    }
+
+
+    .registration-panel {
+        padding: 20px;
+    }
+
+
+    .rules-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
