@@ -1,0 +1,8 @@
+E101|Arun Kumar|IT|2026-08-25|Present
+E102|Meena Raj|HR|2026-08-25|Present
+E103|Rahul S|Finance|2026-08-25|Absent
+E104|Divya Sharma|IT|2026-08-25|Present
+E105|Vijay Kumar|Marketing|2026-08-25|Late
+E106|Anjali S|HR|2026-08-25|Present
+E107|Suresh Kumar|Finance|2026-08-25|Present
+E108|Kavya R|Marketing|2026-08-25|Absent
