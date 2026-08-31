@@ -1,0 +1,740 @@
+/* =========================================
+   RESET
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+   ========================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f3ee;
+    color: #41443f;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   PAGE
+   ========================================= */
+
+.page {
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+    width: 100%;
+    height: 78px;
+
+    padding: 0 7%;
+
+    background: #fffdf9;
+
+    border-bottom: 1px solid #e3dfd6;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* =========================================
+   BRAND
+   ========================================= */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+
+.logo {
+    width: 43px;
+    height: 43px;
+
+    border-radius: 10px;
+
+    background: #e8e3d9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 19px;
+}
+
+
+.brand span {
+    display: block;
+
+    font-size: 6px;
+
+    color: #8a7558;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 4px;
+}
+
+
+.brand h1 {
+    font-size: 18px;
+
+    color: #41433e;
+}
+
+
+/* =========================================
+   HEADER BADGE
+   ========================================= */
+
+.badge {
+    padding: 8px 13px;
+
+    border-radius: 20px;
+
+    background: #eef3ec;
+
+    border: 1px solid #dce6da;
+
+    color: #6d826b;
+
+    font-size: 6px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+   ========================================= */
+
+.container {
+    width: 86%;
+
+    max-width: 1050px;
+
+    margin: 30px auto;
+}
+
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+
+.hero {
+    background: #efebe2;
+
+    border: 1px solid #e1dbcf;
+
+    border-radius: 14px;
+
+    padding: 27px 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 17px;
+
+    min-height: 210px;
+}
+
+
+.section-label {
+    display: block;
+
+    font-size: 6px;
+
+    color: #897355;
+
+    font-weight: bold;
+
+    letter-spacing: 1.4px;
+
+    margin-bottom: 8px;
+}
+
+
+.hero-content {
+    max-width: 650px;
+}
+
+
+.hero h2 {
+    font-size: 29px;
+
+    line-height: 1.2;
+
+    color: #41433e;
+
+    margin-bottom: 10px;
+}
+
+
+.hero h2 strong {
+    color: #887252;
+}
+
+
+.hero p {
+    max-width: 570px;
+
+    font-size: 8px;
+
+    color: #929089;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   HERO VISUAL
+   ========================================= */
+
+.hero-visual {
+    width: 210px;
+    height: 150px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.visual-circle {
+    width: 82px;
+    height: 82px;
+
+    border-radius: 50%;
+
+    background: #fffdf9;
+
+    border: 1px solid #ddd7cb;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 30px;
+
+    box-shadow: 0 7px 18px rgba(70, 60, 45, 0.07);
+}
+
+
+/* =========================================
+   MINI KPI CARDS
+   ========================================= */
+
+.mini-card {
+    position: absolute;
+
+    width: 65px;
+
+    padding: 9px;
+
+    border-radius: 8px;
+
+    background: #fffdf9;
+
+    border: 1px solid #ded9d0;
+
+    box-shadow: 0 5px 14px rgba(70, 60, 45, 0.06);
+}
+
+
+.mini-card span {
+    display: block;
+
+    font-size: 5px;
+
+    color: #99968f;
+
+    font-weight: bold;
+
+    margin-bottom: 4px;
+}
+
+
+.mini-card strong {
+    font-size: 12px;
+
+    color: #897254;
+}
+
+
+.card-one {
+    top: 7px;
+    left: 0;
+}
+
+
+.card-two {
+    right: 0;
+    bottom: 8px;
+}
+
+
+.card-two strong {
+    color: #65806b;
+}
+
+
+/* =========================================
+   ANALYSIS CARD
+   ========================================= */
+
+.analysis-card {
+    background: #fffdf9;
+
+    border: 1px solid #e1ddd4;
+
+    border-radius: 13px;
+
+    padding: 24px;
+
+    margin-bottom: 17px;
+}
+
+
+/* =========================================
+   ANALYSIS HEADING
+   ========================================= */
+
+.analysis-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+
+.analysis-heading h3 {
+    font-size: 17px;
+
+    color: #484a44;
+
+    margin-bottom: 6px;
+}
+
+
+.analysis-heading p {
+    font-size: 7px;
+
+    color: #99968f;
+}
+
+
+.heading-icon {
+    width: 47px;
+    height: 47px;
+
+    border-radius: 11px;
+
+    background: #f0ece3;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 20px;
+}
+
+
+/* =========================================
+   SOURCE GRID
+   ========================================= */
+
+.source-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+
+.source-card {
+    padding: 14px;
+
+    background: #f8f5ef;
+
+    border: 1px solid #e3ded4;
+
+    border-radius: 9px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    transition: 0.2s ease;
+}
+
+
+.source-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 13px rgba(70, 60, 45, 0.06);
+}
+
+
+.source-icon {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 8px;
+
+    background: #fffdf9;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 13px;
+}
+
+
+.source-card strong {
+    display: block;
+
+    font-size: 8px;
+
+    color: #575950;
+
+    margin-bottom: 4px;
+}
+
+
+.source-card p {
+    font-size: 6px;
+
+    color: #99968f;
+}
+
+
+/* =========================================
+   FORM
+   ========================================= */
+
+.analysis-card form {
+    text-align: center;
+}
+
+
+.analysis-card button {
+    border: none;
+
+    padding: 12px 21px;
+
+    border-radius: 8px;
+
+    background: #897254;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.analysis-card button span {
+    margin-left: 8px;
+
+    font-size: 11px;
+}
+
+
+.analysis-card button:hover {
+    background: #725d42;
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 6px 14px rgba(92, 73, 46, 0.15);
+}
+
+
+/* =========================================
+   KPI SECTION
+   ========================================= */
+
+.kpi-section {
+    margin-top: 5px;
+}
+
+
+.kpi-heading {
+    margin-bottom: 12px;
+}
+
+
+.kpi-heading h3 {
+    font-size: 15px;
+
+    color: #484a44;
+}
+
+
+/* =========================================
+   KPI GRID
+   ========================================= */
+
+.kpi-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+
+.kpi-card {
+    background: #fffdf9;
+
+    border: 1px solid #e2ddd4;
+
+    border-radius: 10px;
+
+    padding: 16px;
+
+    transition: 0.2s ease;
+}
+
+
+.kpi-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 15px rgba(70, 60, 45, 0.06);
+}
+
+
+.kpi-icon {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 8px;
+
+    background: #f0ece3;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 13px;
+
+    margin-bottom: 10px;
+}
+
+
+.kpi-card h4 {
+    font-size: 8px;
+
+    color: #575950;
+
+    margin-bottom: 5px;
+}
+
+
+.kpi-card p {
+    font-size: 6px;
+
+    color: #99968f;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    margin-top: 25px;
+
+    padding-top: 16px;
+
+    border-top: 1px solid #e1ddd5;
+
+    text-align: center;
+
+    font-size: 6px;
+
+    color: #aaa69e;
+
+    letter-spacing: 0.8px;
+}
+
+
+footer span {
+    color: #80796e;
+
+    font-weight: bold;
+}
+
+
+footer i {
+    font-style: normal;
+
+    margin: 0 7px;
+
+    color: #cbc7bf;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 850px) {
+
+    .hero {
+        padding: 24px;
+    }
+
+    .hero-visual {
+        width: 170px;
+    }
+
+    .kpi-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 650px) {
+
+    .header {
+        padding: 0 5%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .badge {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero-visual {
+        width: 100%;
+
+        height: 105px;
+    }
+
+    .source-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .kpi-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 450px) {
+
+    .brand h1 {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 38px;
+        height: 38px;
+
+        font-size: 16px;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .hero p {
+        font-size: 7px;
+    }
+
+    .analysis-card {
+        padding: 18px;
+    }
+
+    .analysis-heading {
+        align-items: flex-start;
+    }
+
+    .heading-icon {
+        width: 40px;
+        height: 40px;
+
+        font-size: 16px;
+    }
+
+}
