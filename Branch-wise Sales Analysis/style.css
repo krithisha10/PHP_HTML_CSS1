@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+   ========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f4f8f5;
+
+    color: #263d32;
+
+    min-height: 100vh;
+}
+
+
+/* =========================
+   PAGE
+   ========================= */
+
+.page-container {
+    width: 92%;
+    max-width: 1180px;
+
+    margin: auto;
+
+    padding: 48px 0 30px;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.main-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+
+    margin-bottom: 42px;
+}
+
+.brand-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: #dcefe4;
+
+    color: #278254;
+
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+.main-header h1 {
+    font-size: 30px;
+
+    color: #244c38;
+
+    margin-bottom: 6px;
+}
+
+.main-header p {
+    font-size: 12px;
+
+    color: #84958c;
+}
+
+
+/* =========================
+   INTRO
+   ========================= */
+
+.intro {
+    margin-bottom: 25px;
+}
+
+.small-title {
+    display: inline-block;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.4px;
+
+    color: #368b60;
+
+    margin-bottom: 7px;
+}
+
+.intro h2 {
+    font-size: 20px;
+
+    color: #294c3b;
+
+    margin-bottom: 6px;
+}
+
+.intro p {
+    font-size: 12px;
+
+    color: #8a9991;
+}
+
+
+/* =========================
+   BRANCH CARDS
+   ========================= */
+
+.branch-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.branch-card {
+    background: #ffffff;
+
+    border: 1px solid #dce8e1;
+
+    border-radius: 15px;
+
+    padding: 24px 22px;
+
+    box-shadow:
+        0 8px 25px rgba(38, 80, 58, 0.055);
+
+    transition: 0.2s ease;
+}
+
+.branch-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(38, 80, 58, 0.09);
+
+    border-color: #c9ded2;
+}
+
+
+/* =========================
+   CARD TOP
+   ========================= */
+
+.card-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 18px;
+}
+
+.branch-number {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 9px;
+
+    background: #e3f2e9;
+
+    color: #31865a;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.branch-label {
+    font-size: 9px;
+
+    letter-spacing: 1.3px;
+
+    color: #a0ada6;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   BRANCH TITLE
+   ========================= */
+
+.branch-card h3 {
+    font-size: 17px;
+
+    color: #294a3a;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   FIELDS
+   ========================= */
+
+.sales-fields {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+}
+
+.field label {
+    display: block;
+
+    font-size: 10px;
+
+    color: #718179;
+
+    font-weight: bold;
+
+    margin-bottom: 6px;
+}
+
+
+/* =========================
+   NORMAL INPUT
+   ========================= */
+
+.field > input {
+    width: 100%;
+
+    height: 39px;
+
+    border: 1px solid #d7e3dc;
+
+    border-radius: 7px;
+
+    background: #fbfdfc;
+
+    padding: 0 11px;
+
+    font-size: 11px;
+
+    color: #344d40;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+.field > input:focus {
+    border-color: #4ca574;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px rgba(76, 165, 116, 0.09);
+}
+
+
+/* =========================
+   MONEY INPUT
+   ========================= */
+
+.money-input {
+    display: flex;
+
+    align-items: center;
+
+    height: 39px;
+
+    border: 1px solid #d7e3dc;
+
+    border-radius: 7px;
+
+    background: #fbfdfc;
+
+    overflow: hidden;
+
+    transition: 0.2s ease;
+}
+
+.money-input:focus-within {
+    border-color: #4ca574;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px rgba(76, 165, 116, 0.09);
+}
+
+.money-input span {
+    width: 34px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #5a8d70;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+.money-input input {
+    flex: 1;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    padding: 0 8px;
+
+    font-size: 11px;
+
+    color: #344d40;
+}
+
+
+/* REMOVE NUMBER ARROWS */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+/* =========================
+   PLACEHOLDER
+   ========================= */
+
+input::placeholder {
+    color: #a5b0aa;
+}
+
+
+/* =========================
+   BUTTON
+   ========================= */
+
+.action-area {
+    text-align: center;
+
+    margin-top: 28px;
+}
+
+button {
+    min-width: 190px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #358d60;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 15px rgba(53, 141, 96, 0.18);
+
+    transition: 0.2s ease;
+}
+
+button span {
+    margin-left: 8px;
+
+    font-size: 15px;
+}
+
+button:hover {
+    background: #28784f;
+
+    transform: translateY(-2px);
+}
+
+.action-area p {
+    margin-top: 9px;
+
+    font-size: 9px;
+
+    color: #9aa59f;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    text-align: center;
+
+    margin-top: 28px;
+
+    font-size: 10px;
+
+    color: #9aa69f;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 950px) {
+
+    .branch-container {
+        grid-template-columns: 1fr;
+    }
+
+    .branch-card {
+        padding: 25px;
+    }
+
+    .sales-fields {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 14px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .page-container {
+        width: 94%;
+
+        padding-top: 30px;
+    }
+
+    .main-header {
+        margin-bottom: 30px;
+    }
+
+    .main-header h1 {
+        font-size: 23px;
+    }
+
+    .main-header p {
+        font-size: 10px;
+    }
+
+    .brand-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .sales-fields {
+        grid-template-columns: 1fr;
+    }
+
+    .branch-card {
+        padding: 20px;
+    }
+}
