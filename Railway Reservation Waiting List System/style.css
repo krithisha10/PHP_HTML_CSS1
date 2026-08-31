@@ -1,0 +1,825 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f6f7f4;
+
+    color: #3e4843;
+
+    min-height: 100vh;
+}
+
+
+.page {
+
+    width: 100%;
+
+    padding: 30px 6% 22px;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+.train-icon {
+
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: #e8ead9;
+
+    font-size: 24px;
+}
+
+
+.label {
+
+    display: block;
+
+    font-size: 8px;
+
+    letter-spacing: 1.8px;
+
+    font-weight: bold;
+
+    color: #718052;
+
+    margin-bottom: 5px;
+}
+
+
+.header h1 {
+
+    font-size: 25px;
+
+    color: #3d4741;
+}
+
+
+.header p {
+
+    font-size: 9px;
+
+    color: #929993;
+
+    margin-top: 5px;
+}
+
+
+.status-badge {
+
+    padding: 9px 14px;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e5dc;
+
+    color: #778453;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+
+    min-height: 175px;
+
+    padding: 30px 35px;
+
+    border-radius: 18px;
+
+    background: #e9ecdd;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    position: relative;
+
+    overflow: hidden;
+
+    margin-bottom: 22px;
+}
+
+
+.hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    border-radius: 50%;
+
+    right: -70px;
+    top: -115px;
+
+    background: rgba(255,255,255,.4);
+}
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.hero-content > span {
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+
+    color: #718052;
+}
+
+
+.hero-content h2 {
+
+    font-size: 28px;
+
+    color: #3d4941;
+
+    margin-top: 8px;
+
+    margin-bottom: 8px;
+}
+
+
+.hero-content p {
+
+    max-width: 620px;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+
+    color: #727b73;
+}
+
+
+.railway-symbol {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 84px;
+    height: 84px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 29px;
+
+    box-shadow:
+        0 10px 25px rgba(70,80,50,.08);
+}
+
+
+/* =========================================
+   RESERVATION BOX
+   ========================================= */
+
+.reservation-box {
+
+    background: #ffffff;
+
+    border: 1px solid #e1e5df;
+
+    border-radius: 16px;
+
+    padding: 25px;
+
+    box-shadow:
+        0 7px 20px rgba(60,70,60,.04);
+}
+
+
+.section-heading {
+
+    margin-bottom: 20px;
+}
+
+
+.section-heading span {
+
+    display: block;
+
+    font-size: 8px;
+
+    letter-spacing: 1.7px;
+
+    font-weight: bold;
+
+    color: #718052;
+
+    margin-bottom: 5px;
+}
+
+
+.section-heading h2 {
+
+    font-size: 20px;
+
+    color: #3d4942;
+}
+
+
+/* =========================================
+   PASSENGER GRID
+   ========================================= */
+
+.passenger-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 13px;
+}
+
+
+/* =========================================
+   PASSENGER CARDS
+   ========================================= */
+
+.passenger-card {
+
+    min-height: 215px;
+
+    padding: 17px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e0e5df;
+
+    transition: .2s ease;
+}
+
+
+.passenger-card:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 18px rgba(60,70,60,.07);
+}
+
+
+.card-one {
+
+    background: #f0f5e8;
+
+    border-top: 4px solid #91a463;
+}
+
+
+.card-two {
+
+    background: #f3edf6;
+
+    border-top: 4px solid #9b83ae;
+}
+
+
+.card-three {
+
+    background: #fff3e5;
+
+    border-top: 4px solid #d49a5d;
+}
+
+
+.card-four {
+
+    background: #eaf1f5;
+
+    border-top: 4px solid #7697ac;
+}
+
+
+/* =========================================
+   CARD TOP
+   ========================================= */
+
+.card-top {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 17px;
+}
+
+
+.card-top > span {
+
+    font-size: 7px;
+
+    letter-spacing: 1px;
+
+    font-weight: bold;
+
+    color: #969e99;
+}
+
+
+.person-icon {
+
+    width: 36px;
+    height: 36px;
+
+    border-radius: 9px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #e2ead5;
+
+    font-size: 15px;
+}
+
+
+.card-two .person-icon {
+
+    background: #e9e0ee;
+}
+
+
+.card-three .person-icon {
+
+    background: #f7e5d0;
+}
+
+
+.card-four .person-icon {
+
+    background: #e0ebf2;
+}
+
+
+/* =========================================
+   LABELS
+   ========================================= */
+
+.passenger-card label {
+
+    display: block;
+
+    font-size: 7px;
+
+    letter-spacing: .8px;
+
+    font-weight: bold;
+
+    color: #69746d;
+
+    margin-bottom: 6px;
+
+    margin-top: 11px;
+}
+
+
+/* =========================================
+   INPUTS
+   ========================================= */
+
+.passenger-card input {
+
+    width: 100%;
+
+    height: 39px;
+
+    padding: 0 10px;
+
+    border: 1px solid #dce2dc;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #46514b;
+
+    font-size: 9px;
+}
+
+
+.passenger-card input:focus {
+
+    border-color: #879a5d;
+
+    box-shadow:
+        0 0 0 3px rgba(120,140,80,.09);
+}
+
+
+.passenger-card input::placeholder {
+
+    color: #afb6b1;
+}
+
+
+/* =========================================
+   CANCELLATION
+   ========================================= */
+
+.cancel-section {
+
+    margin-top: 19px;
+
+    padding: 14px 16px;
+
+    border-radius: 10px;
+
+    background: #fff6ec;
+
+    border: 1px solid #f0dfc9;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+}
+
+
+.cancel-icon {
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 9px;
+
+    background: #f7e5cf;
+
+    color: #ae7744;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+.cancel-content {
+
+    flex: 1;
+}
+
+
+.cancel-content strong {
+
+    display: block;
+
+    font-size: 9px;
+
+    color: #62564a;
+
+    margin-bottom: 4px;
+}
+
+
+.cancel-content p {
+
+    font-size: 7px;
+
+    color: #978b7d;
+}
+
+
+.cancel-input {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+.cancel-input input {
+
+    width: 65px;
+
+    height: 37px;
+
+    border: 1px solid #dfd5c9;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    text-align: center;
+
+    font-size: 10px;
+
+    background: #ffffff;
+}
+
+
+.cancel-input span {
+
+    font-size: 7px;
+
+    color: #927f6d;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   FIFO BOX
+   ========================================= */
+
+.fifo-box {
+
+    margin-top: 15px;
+
+    padding: 13px 16px;
+
+    border-radius: 10px;
+
+    background: #f1f4eb;
+
+    border: 1px solid #e0e6d8;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+}
+
+
+.fifo-icon {
+
+    padding: 9px 12px;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #778652;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: .8px;
+
+    white-space: nowrap;
+}
+
+
+.fifo-box strong {
+
+    display: block;
+
+    font-size: 8px;
+
+    color: #59634e;
+
+    margin-bottom: 4px;
+}
+
+
+.fifo-box p {
+
+    font-size: 7px;
+
+    color: #899187;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   BUTTON
+   ========================================= */
+
+.button-area {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #e5e9e3;
+}
+
+
+.button-area button {
+
+    border: none;
+
+    background: #7c8e59;
+
+    color: #ffffff;
+
+    padding: 13px 25px;
+
+    border-radius: 8px;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .2s ease;
+}
+
+
+.button-area button span {
+
+    margin-left: 7px;
+
+    font-size: 13px;
+}
+
+
+.button-area button:hover {
+
+    background: #687948;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 16px rgba(100,120,70,.18);
+}
+
+
+.button-area p {
+
+    margin-top: 9px;
+
+    font-size: 7px;
+
+    color: #9ba29d;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    padding-top: 12px;
+
+    border-top: 1px solid #dfe4dc;
+
+    font-size: 8px;
+
+    color: #9ba29d;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+    .passenger-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .page {
+
+        padding: 22px 5%;
+    }
+
+    .status-badge {
+
+        display: none;
+    }
+
+    .passenger-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .railway-symbol {
+
+        display: none;
+    }
+
+    .cancel-section {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .cancel-input {
+
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .header h1 {
+
+        font-size: 20px;
+    }
+
+    .hero-content h2 {
+
+        font-size: 22px;
+    }
+
+    .reservation-box {
+
+        padding: 18px;
+    }
+
+}
