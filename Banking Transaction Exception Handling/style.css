@@ -1,0 +1,1089 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+   ========================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #303b46;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   PAGE
+   ========================================= */
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+    width: 100%;
+    height: 76px;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e6ea;
+
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* BRAND */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.bank-icon {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 10px;
+
+    background: #e7eef8;
+    color: #426c9d;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 21px;
+    font-weight: bold;
+}
+
+
+.small-title {
+    display: block;
+
+    font-size: 7px;
+
+    letter-spacing: 1.6px;
+
+    color: #6484a6;
+
+    font-weight: bold;
+
+    margin-bottom: 4px;
+}
+
+
+.brand h1 {
+    font-size: 18px;
+    color: #35414c;
+}
+
+
+/* SECURE BADGE */
+
+.secure-badge {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 8px 13px;
+
+    background: #f0f7f2;
+
+    border: 1px solid #dbe9df;
+
+    border-radius: 20px;
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    letter-spacing: .7px;
+
+    color: #668b72;
+}
+
+
+.secure-dot {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #5fa477;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+   ========================================= */
+
+.main-container {
+    width: 86%;
+    max-width: 1080px;
+
+    margin: 25px auto 35px;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+    min-height: 195px;
+
+    padding: 28px 32px;
+
+    background: #eaf0f7;
+
+    border: 1px solid #dce5ef;
+
+    border-radius: 17px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+.eyebrow {
+    display: block;
+
+    font-size: 7px;
+
+    letter-spacing: 1.6px;
+
+    color: #587ba2;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+.hero h2 {
+    font-size: 28px;
+
+    line-height: 1.15;
+
+    color: #35414d;
+
+    font-weight: 400;
+
+    margin-bottom: 10px;
+}
+
+
+.hero h2 strong {
+    color: #456f9f;
+    font-weight: 700;
+}
+
+
+.hero p {
+    max-width: 520px;
+
+    font-size: 9px;
+
+    line-height: 1.7;
+
+    color: #7d8995;
+}
+
+
+/* =========================================
+   HERO SYMBOL
+   ========================================= */
+
+.hero-symbol {
+    width: 190px;
+    height: 150px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.circle-one {
+    width: 135px;
+    height: 135px;
+
+    border-radius: 50%;
+
+    border: 1px solid #cbd9e8;
+
+    position: absolute;
+
+    right: 15px;
+}
+
+
+.circle-two {
+    width: 82px;
+    height: 82px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    border: 1px solid #dce5ee;
+
+    box-shadow:
+        0 10px 25px rgba(54, 79, 103, .08);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+}
+
+
+.circle-two span {
+    font-size: 32px;
+
+    font-weight: bold;
+
+    color: #507aa5;
+}
+
+
+/* =========================================
+   TRANSACTION PANEL
+   ========================================= */
+
+.transaction-panel {
+    margin-top: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #e0e4e8;
+
+    border-radius: 16px;
+
+    padding: 22px;
+}
+
+
+/* =========================================
+   PANEL HEADING
+   ========================================= */
+
+.panel-heading {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+
+.panel-heading span {
+    display: block;
+
+    font-size: 7px;
+
+    letter-spacing: 1.4px;
+
+    color: #6283a4;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+.panel-heading h2 {
+    font-size: 18px;
+
+    color: #3b4650;
+}
+
+
+.step {
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    background: #f1f4f7;
+
+    border: 1px solid #e2e6ea;
+
+    color: #87919a;
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    letter-spacing: .7px;
+}
+
+
+/* =========================================
+   FIELD GROUP
+   ========================================= */
+
+.field-group {
+    margin-bottom: 16px;
+}
+
+
+.field-group > label {
+    display: block;
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    letter-spacing: .7px;
+
+    color: #7d878f;
+
+    margin-bottom: 6px;
+}
+
+
+.field-group input[type="text"],
+.field-group input[type="number"] {
+    width: 100%;
+
+    height: 38px;
+
+    border: 1px solid #dce1e5;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    padding: 0 12px;
+
+    font-size: 9px;
+
+    color: #46515a;
+
+    background: #fbfcfd;
+
+    transition: .2s ease;
+}
+
+
+.field-group input::placeholder {
+    color: #adb5bb;
+}
+
+
+.field-group input:focus {
+    border-color: #7fa2c4;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px #edf3f9;
+}
+
+
+.field-group small {
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 6px;
+
+    color: #a0a8ae;
+}
+
+
+/* =========================================
+   TWO COLUMN
+   ========================================= */
+
+.two-column {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+
+/* =========================================
+   AMOUNT INPUT
+   ========================================= */
+
+.amount-input {
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #dce1e5;
+
+    border-radius: 8px;
+
+    background: #fbfcfd;
+
+    overflow: hidden;
+
+    transition: .2s ease;
+}
+
+
+.amount-input:focus-within {
+    border-color: #7fa2c4;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px #edf3f9;
+}
+
+
+.amount-input > span {
+    width: 34px;
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #f0f3f6;
+
+    color: #687681;
+
+    font-size: 9px;
+
+    font-weight: bold;
+}
+
+
+.amount-input input {
+    flex: 1;
+
+    height: 100% !important;
+
+    border: none !important;
+
+    border-radius: 0 !important;
+
+    outline: none !important;
+
+    background: transparent !important;
+
+    box-shadow: none !important;
+
+    padding: 0 10px !important;
+}
+
+
+/* =========================================
+   TRANSACTION TYPES
+   ========================================= */
+
+.transaction-types {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+}
+
+
+.type-option {
+    cursor: pointer;
+
+    display: block;
+}
+
+
+.type-option input {
+    display: none;
+}
+
+
+.type-box {
+    height: 62px;
+
+    border: 1px solid #e0e4e7;
+
+    border-radius: 10px;
+
+    background: #fafbfc;
+
+    padding: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    transition: .2s ease;
+}
+
+
+.type-option:hover .type-box {
+    border-color: #c6d4e2;
+
+    background: #f7f9fb;
+}
+
+
+.type-option input:checked + .type-box {
+    border-color: #7c9fc1;
+
+    background: #edf4fa;
+
+    box-shadow:
+        0 0 0 2px #e7f0f8;
+}
+
+
+/* TYPE ICON */
+
+.type-icon {
+    width: 35px;
+    height: 35px;
+
+    border-radius: 9px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 17px;
+
+    font-weight: bold;
+}
+
+
+.type-icon.deposit {
+    background: #e8f4eb;
+    color: #5d9a70;
+}
+
+
+.type-icon.withdraw {
+    background: #fff0e5;
+    color: #c48a57;
+}
+
+
+.type-box strong {
+    display: block;
+
+    font-size: 9px;
+
+    color: #4c565e;
+
+    margin-bottom: 3px;
+}
+
+
+.type-box small {
+    font-size: 6px;
+
+    color: #9ba3a9;
+}
+
+
+/* =========================================
+   CALCULATION BOX
+   ========================================= */
+
+.calculation-box {
+    margin-top: 5px;
+
+    padding: 13px 14px;
+
+    border: 1px solid #e6e8e9;
+
+    background: #fafafa;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.calculation-icon {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 8px;
+
+    background: #fff2df;
+
+    color: #c58b4e;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+.calculation-box strong {
+    display: block;
+
+    font-size: 8px;
+
+    color: #59636b;
+
+    margin-bottom: 3px;
+}
+
+
+.calculation-box span {
+    display: block;
+
+    font-size: 7px;
+
+    color: #969ea4;
+}
+
+
+/* =========================================
+   FORM FOOTER
+   ========================================= */
+
+.form-footer {
+    margin-top: 18px;
+
+    padding-top: 16px;
+
+    border-top: 1px solid #e6e8ea;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.security-note {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #7f898f;
+
+    font-size: 7px;
+}
+
+
+.security-note span {
+    width: 23px;
+    height: 23px;
+
+    border-radius: 50%;
+
+    background: #e9f5ec;
+
+    color: #5c9970;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 9px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   SUBMIT BUTTON
+   ========================================= */
+
+.form-footer button {
+    border: none;
+
+    outline: none;
+
+    background: #3f5264;
+
+    color: #ffffff;
+
+    padding: 12px 19px;
+
+    border-radius: 8px;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .2s ease;
+}
+
+
+.form-footer button:hover {
+    background: #304352;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 16px rgba(45, 63, 79, .15);
+}
+
+
+.form-footer button span {
+    font-size: 13px;
+
+    margin-left: 8px;
+}
+
+
+/* =========================================
+   SAFETY SECTION
+   ========================================= */
+
+.safety-section {
+    margin-top: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #e0e4e8;
+
+    border-radius: 15px;
+
+    padding: 20px;
+}
+
+
+.safety-heading {
+    margin-bottom: 15px;
+}
+
+
+.safety-heading span {
+    display: block;
+
+    font-size: 7px;
+
+    letter-spacing: 1.4px;
+
+    color: #6a839b;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+.safety-heading h2 {
+    font-size: 17px;
+
+    color: #3f4951;
+}
+
+
+/* =========================================
+   SAFETY GRID
+   ========================================= */
+
+.safety-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 10px;
+}
+
+
+.safety-card {
+    min-height: 75px;
+
+    padding: 12px;
+
+    background: #fafbfc;
+
+    border: 1px solid #e4e7e9;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.safety-icon {
+    width: 34px;
+    height: 34px;
+
+    flex-shrink: 0;
+
+    border-radius: 9px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.safety-icon.blue {
+    background: #e8f0f8;
+    color: #6488ad;
+}
+
+
+.safety-icon.orange {
+    background: #fff0df;
+    color: #c58c51;
+}
+
+
+.safety-icon.green {
+    background: #e8f4eb;
+    color: #5e9870;
+}
+
+
+.safety-card strong {
+    display: block;
+
+    font-size: 8px;
+
+    color: #56616a;
+
+    margin-bottom: 4px;
+}
+
+
+.safety-card p {
+    font-size: 7px;
+
+    line-height: 1.5;
+
+    color: #9aa2a7;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    margin-top: 20px;
+
+    padding-top: 17px;
+
+    border-top: 1px solid #dfe3e6;
+
+    text-align: center;
+
+    font-size: 6px;
+
+    letter-spacing: 1px;
+
+    color: #9ba3a8;
+}
+
+
+footer span {
+    margin: 0 6px;
+
+    color: #c4c9cc;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 850px) {
+
+    .main-container {
+        width: 90%;
+    }
+
+
+    .hero-symbol {
+        width: 150px;
+    }
+
+
+    .safety-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 650px) {
+
+    .header {
+        padding: 0 5%;
+    }
+
+
+    .secure-badge {
+        display: none;
+    }
+
+
+    .main-container {
+        width: 92%;
+    }
+
+
+    .hero {
+        padding: 23px;
+    }
+
+
+    .hero-symbol {
+        display: none;
+    }
+
+
+    .hero h2 {
+        font-size: 23px;
+    }
+
+
+    .transaction-panel,
+    .safety-section {
+        padding: 16px;
+    }
+
+
+    .two-column {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+
+    .transaction-types {
+        grid-template-columns: 1fr;
+    }
+
+
+    .safety-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .form-footer {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 13px;
+    }
+
+
+    .form-footer button {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 430px) {
+
+    .brand h1 {
+        font-size: 15px;
+    }
+
+
+    .bank-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+
+    .panel-heading {
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+
+    .step {
+        font-size: 6px;
+
+        padding: 6px 9px;
+    }
+
+}
