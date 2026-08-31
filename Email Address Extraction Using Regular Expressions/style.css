@@ -1,0 +1,714 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+   ========================================= */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f7f5fc;
+
+    color: #383440;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   PAGE
+   ========================================= */
+
+.page {
+
+    width: 100%;
+
+    padding: 32px 6% 25px;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 28px;
+}
+
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+.mail-icon {
+
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: #e8e1f7;
+
+    color: #7957ad;
+
+    font-size: 25px;
+
+    box-shadow:
+        0 6px 15px rgba(100, 75, 145, 0.08);
+}
+
+
+.label {
+
+    display: block;
+
+    font-size: 8px;
+
+    letter-spacing: 1.8px;
+
+    font-weight: bold;
+
+    color: #8063ae;
+
+    margin-bottom: 5px;
+}
+
+
+.header h1 {
+
+    font-size: 25px;
+
+    color: #383440;
+}
+
+
+.header p {
+
+    font-size: 9px;
+
+    color: #96909e;
+
+    margin-top: 5px;
+}
+
+
+.regex-badge {
+
+    background: #ffffff;
+
+    border: 1px solid #e3dcef;
+
+    color: #7959a8;
+
+    padding: 9px 13px;
+
+    border-radius: 8px;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+
+    min-height: 190px;
+
+    background: #ddd4ef;
+
+    border-radius: 18px;
+
+    padding: 28px 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 210px;
+    height: 210px;
+
+    border-radius: 50%;
+
+    right: 7%;
+
+    top: -95px;
+
+    background: rgba(255,255,255,0.25);
+}
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.hero-content > span {
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+
+    color: #7655a2;
+}
+
+
+.hero-content h2 {
+
+    font-size: 27px;
+
+    line-height: 1.2;
+
+    color: #41384b;
+
+    margin-top: 8px;
+
+    margin-bottom: 8px;
+}
+
+
+.hero-content p {
+
+    max-width: 530px;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+
+    color: #766d7c;
+}
+
+
+.hero-symbol {
+
+    width: 105px;
+    height: 105px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    color: #8060ad;
+
+    font-size: 42px;
+
+    font-weight: bold;
+
+    position: relative;
+
+    z-index: 2;
+
+    box-shadow:
+        0 10px 25px rgba(70, 50, 95, 0.08);
+}
+
+
+/* =========================================
+   INPUT SECTION
+   ========================================= */
+
+.input-section {
+
+    background: #ffffff;
+
+    border: 1px solid #e7e1ef;
+
+    border-radius: 15px;
+
+    padding: 22px;
+
+    box-shadow:
+        0 7px 22px rgba(65, 45, 90, 0.045);
+
+    margin-bottom: 20px;
+}
+
+
+.section-heading {
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+}
+
+
+.section-heading > div:first-child > span {
+
+    display: block;
+
+    font-size: 8px;
+
+    letter-spacing: 1.6px;
+
+    font-weight: bold;
+
+    color: #8062aa;
+
+    margin-bottom: 5px;
+}
+
+
+.section-heading h2 {
+
+    font-size: 19px;
+
+    color: #403847;
+}
+
+
+.rule-badge {
+
+    background: #f0ebf8;
+
+    color: #8060aa;
+
+    padding: 7px 10px;
+
+    border-radius: 6px;
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    letter-spacing: .8px;
+}
+
+
+/* =========================================
+   EMPLOYEE GRID
+   ========================================= */
+
+.employee-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+/* =========================================
+   EMPLOYEE CARD
+   ========================================= */
+
+.employee-card {
+
+    background: #faf9fd;
+
+    border: 1px solid #e6e0ed;
+
+    border-radius: 12px;
+
+    padding: 17px;
+
+    position: relative;
+
+    transition: .2s ease;
+}
+
+
+.employee-card:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 9px 20px rgba(65, 45, 90, 0.07);
+}
+
+
+.card-top {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 17px;
+}
+
+
+.employee-number {
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+    color: #aaa2b2;
+
+    letter-spacing: 1px;
+}
+
+
+.person-icon {
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #eee8f8;
+
+    border-radius: 9px;
+
+    font-size: 16px;
+}
+
+
+.employee-card label {
+
+    display: block;
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    letter-spacing: .8px;
+
+    color: #7f7786;
+
+    margin-bottom: 6px;
+
+    margin-top: 12px;
+}
+
+
+.employee-card input {
+
+    width: 100%;
+
+    height: 38px;
+
+    border: 1px solid #e4dfe9;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    padding: 0 10px;
+
+    background: #ffffff;
+
+    color: #413a47;
+
+    font-size: 9px;
+
+    transition: .2s ease;
+}
+
+
+.employee-card input:focus {
+
+    border-color: #9879c0;
+
+    box-shadow:
+        0 0 0 3px rgba(152, 121, 192, .10);
+}
+
+
+.employee-card input::placeholder {
+
+    color: #b5afb9;
+}
+
+
+/* =========================================
+   BUTTON
+   ========================================= */
+
+.button-area {
+
+    text-align: center;
+
+    margin-top: 22px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #eeeaf2;
+}
+
+
+.button-area button {
+
+    border: none;
+
+    background: #8060ad;
+
+    color: #ffffff;
+
+    padding: 12px 23px;
+
+    border-radius: 8px;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .2s ease;
+}
+
+
+.button-area button:hover {
+
+    background: #6d4e99;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 16px rgba(128, 96, 173, .18);
+}
+
+
+.button-area p {
+
+    font-size: 8px;
+
+    color: #a09aa5;
+
+    margin-top: 9px;
+}
+
+
+/* =========================================
+   REGEX INFO
+   ========================================= */
+
+.regex-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    background: #f0ebf8;
+
+    border: 1px solid #e1d8ed;
+
+    border-radius: 12px;
+
+    padding: 15px 18px;
+
+    margin-bottom: 23px;
+}
+
+
+.info-icon {
+
+    width: 40px;
+    height: 40px;
+
+    min-width: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #7959a6;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.regex-info span {
+
+    display: block;
+
+    font-size: 7px;
+
+    letter-spacing: 1.2px;
+
+    font-weight: bold;
+
+    color: #8060a9;
+
+    margin-bottom: 5px;
+}
+
+
+.regex-info p {
+
+    font-size: 8px;
+
+    color: #817986;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+
+    text-align: center;
+
+    border-top: 1px solid #e7e1ed;
+
+    padding-top: 13px;
+
+    font-size: 8px;
+
+    color: #9c96a2;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 850px) {
+
+    .employee-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .page {
+
+        padding: 25px 5% 20px;
+    }
+
+
+    .regex-badge {
+
+        display: none;
+    }
+
+
+    .hero {
+
+        padding: 25px;
+
+    }
+
+
+    .hero-symbol {
+
+        width: 75px;
+        height: 75px;
+
+        font-size: 30px;
+    }
+
+
+    .hero-content h2 {
+
+        font-size: 22px;
+    }
+
+
+    .employee-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .section-heading {
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .header h1 {
+
+        font-size: 20px;
+    }
+
+
+    .hero-symbol {
+
+        display: none;
+    }
+
+
+    .hero-content h2 {
+
+        font-size: 21px;
+    }
+
+}
